@@ -5,6 +5,31 @@
 /* ===== MAIN ===== */
 
 /*  ===== POPULAR COUNTRIES =====  */
+@media (max-width: 600px) {
+    .Popular-Countries {
+        padding: 20px 16px;
+    }
+
+    .Title {
+        margin-left: 0;
+    }
+
+    .Countries-Grid {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .Country-Card {
+        width: auto;
+        height: auto;
+        margin-right: 0;
+    }
+
+    .Top img {
+        height: 90px;
+    }
+}
+
 /*  ===== POPULAR COUNTRIES =====  */
 
 /*  ===== POPULAR CATEGORIES ===== */
