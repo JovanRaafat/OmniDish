@@ -15,7 +15,7 @@
     min-height: 236px;
     background-color: #06182e;
     padding: 24px 64px;
-
+    font-size: 2rem;
 }
 
 .Countries-Grid {
@@ -34,11 +34,13 @@
     overflow: hidden;
     margin-right: 20px;
     transition: all 0.15s ease-in-out;
+    cursor: pointer;
 }
 
 .Country-Card:hover {
-     opacity: 0.9;
+    opacity: 0.8;
 }
+
 .Head {
     display: flex;
     justify-content: space-between;
@@ -50,7 +52,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-left: 62px;
+    margin-left: 64px;
 }
 
 .Head img {
@@ -59,12 +61,14 @@
 
 .Head h3 {
     color: white;
+    font-size: 0.6em;
 }
 
 .Head a {
     color: rgb(3, 140, 140);
     text-decoration: none;
     transition: all 0.2s ease-in-out;
+    font-size: 0.6em;
 }
 
 .Head a:hover {
@@ -93,14 +97,14 @@
     color: white;
     font-family: 'Lucida Sans';
     font-weight: bold;
-    font-size: 14px;
+    font-size: 0.44em;
     flex: 1;
 }
 
 .arrow {
     color: white;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 0.5em;
 }
 
 /*  ===== POPULAR COUNTRIES =====  */
