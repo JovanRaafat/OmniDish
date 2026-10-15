@@ -181,6 +181,94 @@
 /*  ===== POPULAR COUNTRIES =====  */
 
 /*  ===== POPULAR CATEGORIES ===== */
+.Popular_Categories{
+    background-color: #0b1329;
+    padding: 15px 20px;
+    box-sizing: border-box;
+}
+
+.begin{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5px;
+    background-color: #0b1329;
+    margin-bottom: 15px;
+}
+.begin h1{
+    font-size: 20px;
+    color: azure;
+    margin: 0;
+
+    
+}
+.begin a{
+    color: #38bdf8;
+    text-decoration: none;
+    font-size: 18px ;
+    transition: opacity 0.2s ease-in-out;
+
+}
+.begin a:hover{
+    opacity: 0.5;
+}
+
+
+.categories_gird{
+display:flex;
+justify-content: space-evenly;
+gap: 12px;
+padding: 20px 30px;
+overflow-x: auto;
+background-color: #0b1329;
+}
+.category_card{
+   height: 150px;
+   width: 220px;
+   position: relative;
+   border-radius: 12px;
+   overflow: hidden;
+   transition: transform 0.3s ease;
+}
+.category_card:hover{
+    transform: translateY(-5px);
+}
+.category_card .card_img{
+    display: block;
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+.category_card .content{
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 35%;
+     bottom: 0;
+     left: 0;
+     padding:8px 10px;
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-end;
+     background: linear-gradient( rgba(11,19,41,0.9) 100%);
+}
+.category_card .content h3{
+font-size: 15px;
+color: #ffffff;
+margin: 0 0 4px;
+}
+.category_card .content p{
+    font-size: 10px;
+    color:rgb(128, 136, 144);
+   margin: 0;
+}
+.arrow{
+    position: absolute;
+    right: 10px;
+    bottom:10px;
+    color: #ffffff;
+}
+
 /*  ===== POPULAR CATEGORIES ===== */
 
 /*  ===== FOOTER =====  */
