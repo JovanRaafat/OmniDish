@@ -1,42 +1,274 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <link rel="stylesheet" href="css/style.css">
-  <title>Omni Dish</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- ===== NAVBAR ===== -->
-  <!-- ===== NAVBAR ===== -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Omni Dish</title>
+  </head>
 
-  <!-- ===== MAIN ===== -->
-   <div class="main">
-  <div class="main_title">
-      <div class="content"><p class="subtitle"> Good Food • New Cultures • Amazing Places</p> 
-       <h1>Explore the world through <span>food</span></h1>
-      <p class="paragraph">Discover delicious recipes from different countries and experience the flavors of the world</p></div>
-  <div class="search"><input type="text" placeholder="Search for a recipe..."> </div>
-  <div class="button">
-    <button>🌍 Countries / Regions</button>
-    <button>🍴 Categories</button>
-    <button>🎲 Random Recipe</button>
-  </div>
-    </div>
-    </div>
-  
-  <!-- ===== MAIN ===== -->
-  
-  <!-- ===== POPULAR COUNTRIES ===== -->
-  <!-- ===== POPULAR COUNTRIES ===== -->
-  
-  <!-- ===== POPULAR CATEGORIES ===== -->
-  <!-- ===== POPULAR CATEGORIES ===== -->
-  
-  <!-- ===== FOOTER ===== -->
-  <!-- ===== FOOTER ===== -->
-  
-</body>
+  <body>
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar">
+      <div class="logo">
+        <a href="#">
+          <img src="./images/OmniDish.png" alt="OmniDish" />
+          <span>OmniDish</span>
+        </a>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Countries</a></li>
+        <li><a href="#">Categories</a></li>
+        <li><a href="#">Search</a></li>
+        <li><a href="#" class="rr">Random Recipe</a></li>
+      </ul>
+
+      <div class="Right">
+        <ul>
+          <li>
+            <a href="#" class="search-icon">
+              <img src="./images/search-icon.png" alt="Search" />
+            </a>
+          </li>
+          <li>
+            <a href="#" class="dark-mode-icon">
+              <img src="./images/dark-mode-icon.png" alt="Dark Mode" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ===== MAIN / HERO SECTION ===== -->
+    <section class="main">
+      <div class="main_title">
+        <div class="content">
+          <p class="subtitle">
+            Good Food • New Cultures • Amazing Places
+          </p>
+
+          <h1>Explore the world through <span>food</span></h1>
+
+          <p class="paragraph">
+            Discover delicious recipes from different countries and experience
+            the flavors of the world
+          </p>
+        </div>
+
+        <div class="search">
+          <input type="text" placeholder="Search for a recipe..." />
+        </div>
+
+        <div class="button">
+          <button>🌍 Countries / Regions</button>
+          <button>🍴 Categories</button>
+          <button>🎲 Random Recipe</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== POPULAR COUNTRIES ===== -->
+    <section class="Popular-Countries">
+      <div class="Head">
+        <div class="Title">
+          <img
+            src="images/ChatGPT Image Oct 14, 2026, 11_55_57 PM.png"
+            alt=""
+          />
+          <h3>Popular Countries</h3>
+        </div>
+
+        <a href="#">View All →</a>
+      </div>
+
+      <div class="Countries-Grid">
+        <div class="Country-Card">
+          <div class="Top">
+            <img src="images/image.png" alt="" class="Country-Photo" />
+          </div>
+          <div class="Bottom">
+            <img
+              src="https://flagsapi.com/EG/shiny/32.png"
+              alt="Egypt flag"
+              class="Flag"
+            />
+            <span class="Country-Name">Egypt</span>
+            <span class="arrow">→</span>
+          </div>
+        </div>
+
+        <div class="Country-Card">
+          <div class="Top">
+            <img
+              src="images/European Rail Vacation Packages with Air.jpg"
+              alt=""
+              class="Country-Photo"
+            />
+          </div>
+          <div class="Bottom">
+            <img
+              src="https://flagsapi.com/IT/shiny/32.png"
+              alt="Italy flag"
+              class="Flag"
+            />
+            <span class="Country-Name">Italy</span>
+            <span class="arrow">→</span>
+          </div>
+        </div>
+
+        <div class="Country-Card">
+          <div class="Top">
+            <img
+              src="images/Taj Mahal monument - Agra, India.jpg"
+              alt=""
+              class="Country-Photo"
+            />
+          </div>
+          <div class="Bottom">
+            <img
+              src="https://flagsapi.com/IN/shiny/32.png"
+              alt="India flag"
+              class="Flag"
+            />
+            <span class="Country-Name">India</span>
+            <span class="arrow">→</span>
+          </div>
+        </div>
+
+        <div class="Country-Card">
+          <div class="Top">
+            <img
+              src="images/Sardinia travel.jpg"
+              alt=""
+              class="Country-Photo"
+            />
+          </div>
+          <div class="Bottom">
+            <img
+              src="https://flagsapi.com/MX/shiny/32.png"
+              alt="Mexico flag"
+              class="Flag"
+            />
+            <span class="Country-Name">Mexico</span>
+            <span class="arrow">→</span>
+          </div>
+        </div>
+
+        <div class="Country-Card">
+          <div class="Top">
+            <img src="images/japan.jpg" alt="" class="Country-Photo" />
+          </div>
+          <div class="Bottom">
+            <img
+              src="https://flagsapi.com/JP/shiny/32.png"
+              alt="Japan flag"
+              class="Flag"
+            />
+            <span class="Country-Name">Japan</span>
+            <span class="arrow">→</span>
+          </div>
+        </div>
+
+        <div class="Country-Card">
+          <div class="Top">
+            <img
+              src="images/best-states-to-make-a-living.jpg"
+              alt=""
+              class="Country-Photo"
+            />
+          </div>
+          <div class="Bottom">
+            <img
+              src="https://flagsapi.com/US/shiny/32.png"
+              alt="United States flag"
+              class="Flag"
+            />
+            <span class="Country-Name">USA</span>
+            <span class="arrow">→</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== POPULAR CATEGORIES ===== -->
+    <section class="Popular_Categories">
+      <div class="begin">
+        <h1>🍽 Popular Categories</h1>
+        <a href="#">View All →</a>
+      </div>
+
+      <div class="categories_gird">
+        <div class="category_card">
+          <img
+            src="./images/image.png"
+            alt="Chicken"
+            class="card_img"
+          />
+          <div class="content">
+            <h3>🐓 Chicken</h3>
+            <p>123+ recipes</p>
+            <div class="arrow">→</div>
+          </div>
+        </div>
+
+        <div class="category_card">
+          <img
+            src="./images/image copy.png"
+            alt="Beef"
+            class="card_img"
+          />
+          <div class="content">
+            <h3>🐄 Beef</h3>
+            <p>98+ recipes</p>
+            <div class="arrow">→</div>
+          </div>
+        </div>
+
+        <div class="category_card">
+          <img
+            src="./images/photo_2026-10-14_21-45-45.jpg"
+            alt="Seafood"
+            class="card_img"
+          />
+          <div class="content">
+            <h3>🐟 Seafood</h3>
+            <p>76+ recipes</p>
+            <div class="arrow">→</div>
+          </div>
+        </div>
+
+        <div class="category_card">
+          <img
+            src="./images/photo_2026-10-14_21-53-04.jpg"
+            alt="Dessert"
+            class="card_img"
+          />
+          <div class="content">
+            <h3>🍰 Dessert</h3>
+            <p>64+ recipes</p>
+            <div class="arrow">→</div>
+          </div>
+        </div>
+
+        <div class="category_card">
+          <img
+            src="./images/image copy 2.png"
+            alt="Vegetarian"
+            class="card_img"
+          />
+          <div class="content">
+            <h3>🥬 Vegetarian</h3>
+            <p>88+ recipes</p>
+            <div class="arrow">→</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+  </body>
 </html>
