@@ -85,6 +85,93 @@
 /* ===== NAVBAR ===== */
 
 /* ===== MAIN ===== */
+body {
+    /* background-color: #0b131e;  */
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+
+.main {
+    background-image: url(../Spaghetti.jpeg);
+    object-fit: cover;
+    height: 80vh;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    background-position: center;
+    font-size: 2rem;
+}
+
+.content {
+    width: 100%;
+}
+
+.subtitle {
+    color: #2dd4bf;
+    font-size: 0.6em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.main_title h1 {
+
+    font-size: 1.5em;
+    margin: 15px 0;
+}
+
+.main_title h1 span {
+    color: #2dd4bf;
+}
+
+.paragraph {
+    color: #94a3b8;
+    margin-bottom: 25px;
+    font-size: 0.55em;
+}
+
+.search {
+
+    display: flex;
+    background-color: #1e293b;
+    border-radius: 30px;
+    padding: 8px 15px;
+    width: 70%;
+    margin-bottom: 20px;
+
+}
+
+.search input {
+    background: transparent;
+    border: 0px;
+    color: white;
+    width: 100%;
+    font-size: 0.5em;
+}
+
+.button {
+    width: 70%;
+
+}
+
+.button button {
+
+    background-color: #1e293b;
+    color: white;
+    border: 0px;
+    padding: 10px 10px;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.button button:hover {
+    background-color: #2dd4bf;
+}
+
+
+
+
+
 /* ===== MAIN ===== */
 
 /*  ===== POPULAR COUNTRIES =====  */
