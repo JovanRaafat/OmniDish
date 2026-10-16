@@ -42,6 +42,11 @@
 /*  ===== POPULAR COUNTRIES =====  */
 
 /*  ===== POPULAR CATEGORIES ===== */
+@media screen and (max-width: 400px){
+  .category_crad{
+    width: 45%;
+  }
+}
 /*  ===== POPULAR CATEGORIES ===== */
 
 /*  ===== FOOTER =====  */
