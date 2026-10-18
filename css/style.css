@@ -20,22 +20,22 @@
 .logo {
   display: flex;
   align-items: center;
-  img {
-    width: 42px;
-    display: inline-block;
-  }
-  a {
-    display: flex;
-    align-items: center;
-    font-size: 1.5rem;
-    text-decoration: none;
-    color: white;
-    line-height: 1;
-    background-color: #06182e;
-    span {
-      margin-left: 10px;
-    }
-  }
+  margin-left: 10px;
+}
+.logo img {
+  width: 42px;
+  display: inline-block;
+}
+.logo a {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: white;
+  line-height: 1;
+  background-color: #06182e;
+}
+.logo a span {
   margin-left: 10px;
 }
 .Right {
@@ -47,10 +47,10 @@
   display: flex;
   align-items: center;
   list-style: none;
-  li {
-    display: flex;
-    align-items: center;
-  }
+}
+.Right ul li {
+  display: flex;
+  align-items: center;
 }
 .navbar .search-icon {
   display: flex;
@@ -58,17 +58,17 @@
   padding-right: 14px;
   margin-right: 14px;
   border-right: 1px solid #fff;
-  img {
-    width: 20px;
-  }
+}
+.navbar .search-icon img {
+  width: 20px;
 }
 .dark-mode-icon {
   display: flex;
   align-items: center;
   margin-right: 14px;
-  img {
-    width: 20px;
-  }
+}
+.dark-mode-icon img {
+  width: 20px;
 }
 .navbar {
   display: flex;
@@ -86,95 +86,117 @@
 
 /* ===== MAIN ===== */
 body {
-    /* background-color: #0b131e;  */
-    color: white;
-    font-family: Arial, sans-serif;
-    margin: 0;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
 }
 
-
 .main {
-    background-image: url(../Spaghetti.jpeg);
-    object-fit: cover;
-    height: 80vh;
-    padding: 30px;
-    display: flex;
-    align-items: center;
-    background-position: center;
-    font-size: 2rem;
+  background-image: url(../Spaghetti.jpeg);
+  object-fit: cover;
+  height: 80vh;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  background-position: center;
+  font-size: 2rem;
 }
 
 .content {
-    width: 100%;
+  width: 100%;
 }
 
 .subtitle {
-    color: #2dd4bf;
-    font-size: 0.6em;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #2dd4bf;
+  font-size: 0.6em;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .main_title h1 {
-
-    font-size: 1.5em;
-    margin: 15px 0;
+  font-size: 1.5em;
+  margin: 15px 0;
 }
 
 .main_title h1 span {
-    color: #2dd4bf;
+  color: #2dd4bf;
 }
 
 .paragraph {
-    color: #94a3b8;
-    margin-bottom: 25px;
-    font-size: 0.55em;
+  color: #94a3b8;
+  margin-bottom: 25px;
+  font-size: 0.55em;
 }
 
 .search {
-
-    display: flex;
-    background-color: #1e293b;
-    border-radius: 30px;
-    padding: 8px 15px;
-    width: 70%;
-    margin-bottom: 20px;
-
+  display: flex;
+  background-color: #1e293b;
+  border-radius: 30px;
+  padding: 8px 15px;
+  width: 70%;
+  margin-bottom: 20px;
 }
 
 .search input {
-    background: transparent;
-    border: 0px;
-    color: white;
-    width: 100%;
-    font-size: 0.5em;
+  background: transparent;
+  border: 0px;
+  color: white;
+  width: 100%;
+  font-size: 0.5em;
 }
 
 .button {
-    width: 70%;
-
+  width: 70%;
 }
 
 .button button {
-
-    background-color: #1e293b;
-    color: white;
-    border: 0px;
-    padding: 10px 10px;
-    border-radius: 20px;
-    margin-right: 10px;
+  background-color: #1e293b;
+  color: white;
+  border: 0px;
+  padding: 10px 10px;
+  border-radius: 20px;
+  margin-right: 10px;
 }
 
 .button button:hover {
-    background-color: #2dd4bf;
+  background-color: #2dd4bf;
 }
-
-
-
-
-
 /* ===== MAIN ===== */
 
-/*  ===== POPULAR COUNTRIES =====  */
+/* ===== POPULAR COUNTRIES ===== */
+.Earth {
+  width: 2.5rem;
+}
+
+.card {
+  border-color: #037579;
+  background-color: #06182e;
+  transition: all 0.15s ease-in-out;
+}
+
+section {
+  background-color: #06182e;
+}
+
+.card:hover {
+  opacity: 0.8;
+  transform: translateY(-3px);
+}
+
+.card-img-top {
+  height: 7.5rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.right {
+  color: #037579;
+  transition: all 0.15s ease-in-out;
+}
+
+.right:hover {
+  color: white;
+}
+
 .Popular-Countries {
   min-height: 236px;
   background-color: #06182e;
@@ -201,6 +223,7 @@ body {
 .Country-Card:hover {
   opacity: 0.9;
 }
+
 .Head {
   display: flex;
   justify-content: space-between;
@@ -264,99 +287,97 @@ body {
   font-weight: bold;
   font-size: 16px;
 }
+/* ===== POPULAR COUNTRIES ===== */
 
-/*  ===== POPULAR COUNTRIES =====  */
-
-/*  ===== POPULAR CATEGORIES ===== */
-.Popular_Categories{
-    background-color: #0b1329;
-    padding: 15px 20px;
-    box-sizing: border-box;
-}
-
-.begin{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 5px;
-    background-color: #0b1329;
-    margin-bottom: 15px;
-}
-.begin h1{
-    font-size: 20px;
-    color: azure;
-    margin: 0;
-
-    
-}
-.begin a{
-    color: #38bdf8;
-    text-decoration: none;
-    font-size: 18px ;
-    transition: opacity 0.2s ease-in-out;
-
-}
-.begin a:hover{
-    opacity: 0.5;
+/* ===== POPULAR CATEGORIES ===== */
+.Popular_Categories {
+  background-color: #0b1329;
+  padding: 15px 20px;
+  box-sizing: border-box;
 }
 
-
-.categories_gird{
-display:flex;
-justify-content: space-evenly;
-gap: 12px;
-padding: 20px 30px;
-overflow-x: auto;
-background-color: #0b1329;
-}
-.category_card{
-   height: 150px;
-   width: 220px;
-   position: relative;
-   border-radius: 12px;
-   overflow: hidden;
-   transition: transform 0.3s ease;
-}
-.category_card:hover{
-    transform: translateY(-5px);
-}
-.category_card .card_img{
-    display: block;
-    width:100%;
-    height: 100%;
-    object-fit: cover;
-}
-.category_card .content{
-    position: absolute;
-    box-sizing: border-box;
-    width: 100%;
-    height: 35%;
-     bottom: 0;
-     left: 0;
-     padding:8px 10px;
-     display: flex;
-     flex-direction: column;
-     justify-content: flex-end;
-     background: linear-gradient( rgba(11,19,41,0.9) 100%);
-}
-.category_card .content h3{
-font-size: 15px;
-color: #ffffff;
-margin: 0 0 4px;
-}
-.category_card .content p{
-    font-size: 10px;
-    color:rgb(128, 136, 144);
-   margin: 0;
-}
-.arrow{
-    position: absolute;
-    right: 10px;
-    bottom:10px;
-    color: #ffffff;
+.begin {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 5px;
+  background-color: #0b1329;
+  margin-bottom: 15px;
 }
 
-/*  ===== POPULAR CATEGORIES ===== */
+.begin h1 {
+  font-size: 20px;
+  color: azure;
+  margin: 0;
+}
 
-/*  ===== FOOTER =====  */
-/*  ===== FOOTER =====  */
+.begin a {
+  color: #38bdf8;
+  text-decoration: none;
+  font-size: 18px;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.begin a:hover {
+  opacity: 0.5;
+}
+
+.categories_gird {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 12px;
+  padding: 20px 30px;
+  overflow-x: auto;
+  background-color: #0b1329;
+}
+
+.category_card {
+  height: 150px;
+  width: 220px;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.category_card:hover {
+  transform: translateY(-5px);
+}
+
+.category_card .card_img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.category_card .content {
+  position: absolute;
+  box-sizing: border-box;
+  width: 100%;
+  height: 35%;
+  bottom: 0;
+  left: 0;
+  padding: 8px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: linear-gradient(rgba(11, 19, 41, 0.9) 100%);
+}
+
+.category_card .content h3 {
+  font-size: 15px;
+  color: #ffffff;
+  margin: 0 0 4px;
+}
+
+.category_card .content p {
+  font-size: 10px;
+  color: rgb(128, 136, 144);
+  margin: 0;
+}
+
+/* ===== POPULAR CATEGORIES ===== */
+
+/* ===== FOOTER ===== */
+/* ===== FOOTER ===== */
