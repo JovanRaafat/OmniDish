@@ -4,7 +4,7 @@
 /* ===== MAIN ===== */
 body {
     /* background-color: #0b131e;  */
-    color: white;
+     /* color: white;  */
     font-family: Arial, sans-serif;
     margin: 0;
 }
@@ -12,13 +12,13 @@ body {
 
 .main {
     background-image: url(../Spaghetti.jpeg);
-    object-fit: cover;
-    height: 80vh;
-    padding: 30px;
-    display: flex;
-    align-items: center;
-    background-position: center;
-    font-size: 2rem;
+    /* object-fit: cover; */
+    /* height: 100vh; */
+    /* padding: 30px; */
+    /* display: flex; */
+    /* align-items: center; */
+    background-position: center; 
+    /* font-size: 2rem; */
 }
 
 .content {
@@ -26,15 +26,15 @@ body {
 }
 
 .subtitle {
-    color: #2dd4bf;
-    font-size: 0.6em;
+     color: #2dd4bf; 
+    /* font-size: 0.6em; */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .main_title h1 {
 
-    font-size: 1.5em;
-    margin: 15px 0;
+    /* font-size: 1.5em; */
+      /* margin: 15px 0;   */
 }
 
 .main_title h1 span {
@@ -43,46 +43,49 @@ body {
 
 .paragraph {
     color: #94a3b8;
-    margin-bottom: 25px;
-    font-size: 0.55em;
+    /* margin-bottom: 25px; */
+    /* font-size: 0.55em; */
 }
 
 .search {
 
-    display: flex;
+    /* display: flex; */
     background-color: #1e293b;
-    border-radius: 30px;
-    padding: 8px 15px;
-    width: 70%;
-    margin-bottom: 20px;
+    /* border-radius: 30px; */
+    /* padding: 8px 15px; */
+    width: 100%;
+    /* margin-bottom: 20px; */
+    
 
 }
 
 .search input {
-    background: transparent;
-    border: 0px;
-    color: white;
+     background: transparent; 
+      border: 0px;  
+    /* color: white; */
     width: 100%;
-    font-size: 0.5em;
+    /* font-size: 0.5em; */
 }
 
 .button {
-    width: 70%;
+    /* width: 110%; */
 
 }
 
 .button button {
 
     background-color: #1e293b;
-    color: white;
+    /* color: white; */
     border: 0px;
-    padding: 10px 10px;
-    border-radius: 20px;
-    margin-right: 10px;
+    /* padding: 5px 5px; */
+    /* border-radius: 20px; */
+    /* margin-right: 10px; */
+    cursor: pointer;
 }
 
 .button button:hover {
     background-color: #2dd4bf;
+    transform: translateY(-3px);
 }
 
 
