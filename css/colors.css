@@ -1,0 +1,125 @@
+:root {
+    --bg-primary: #F8FAFC;
+    --bg-surface: #FFFFFF;
+    --bg-secondary: #EDF2F7;
+    --text-primary: #0F172A;
+    --text-secondary: #6a7584;
+    --text-muted: #64748B;
+    --border-color: #E2E8F0;
+    --accent-primary: #0D9488;
+    --accent-primary-hover: #0b514b;
+    --accent-secondary: #0284C7;
+    --tag-bg: #E0F2FE;
+    --tag-text: #0369A1;
+    --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode {
+    --bg-primary: #0B1120;
+    --bg-surface: #1E293B;
+    --bg-secondary: #162032;
+    --text-primary: #FFFFFF;
+    --text-secondary: #94A3B8;
+    --text-muted: #64748B;
+    --border-color: #334155;
+    --accent-primary: #14B8A6;
+    --accent-primary-hover: #2DD4BF;
+    --accent-secondary: #38BDF8;
+    --tag-bg: #0F172A;
+    --tag-text: #38BDF8;
+    --card-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+/* Backgrounds */
+.bg-primary {
+    background-color: var(--bg-primary) !important;
+}
+
+.bg-surface {
+    background-color: var(--bg-surface) !important;
+}
+
+.bg-secondary {
+    background-color: var(--bg-secondary) !important;
+}
+
+/* Text Colors */
+.text-primary {
+    color: var(--text-primary) !important;
+}
+
+.text-secondary {
+    color: var(--text-secondary) !important;
+}
+
+.text-muted {
+    color: var(--text-muted) !important;
+}
+
+/* Borders */
+.border-color {
+    border: 1px solid var(--border-color);
+}
+
+/* Accent Colors */
+.accent-primary {
+    color: var(--accent-primary);
+}
+
+.accent-primary-bg {
+    background-color: var(--accent-primary);
+}
+
+.accent-secondary {
+    color: var(--accent-secondary);
+}
+
+/* Tags */
+.tag-bg {
+    background-color: var(--tag-bg);
+}
+
+.tag-text {
+    color: var(--tag-text);
+}
+
+/* Shadows */
+.card-shadow {
+    box-shadow: var(--card-shadow);
+}
+
+/* Hover */
+.bg-hover,
+.text-hover {
+    transition: all 0.5s ease;
+}
+
+.bg-hover:hover {
+    background-color: var(--accent-primary-hover);
+}
+
+.text-hover:hover {
+    color: var(--accent-primary-hover) !important;
+}
+
+
+
+
+
+
+
+
+/* nav */
+
+.logo {
+    width: 50px;
+}
+
+.navbar {
+    backdrop-filter: blur(5px);
+}
+
+/* nav */
