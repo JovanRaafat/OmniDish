@@ -1,0 +1,11 @@
+.main {
+    background-image: url("../contact.jpeg");
+   
+    background-position: center; 
+   
+}
+.form{
+    width: 400px;
+ box-shadow:-0.25px -0.25px 0px  2px blue ; 
+/* border-color: blue; */
+}
