@@ -300,4 +300,7 @@ section {
 .footer p {
   font-size: 12px;
 }
+.footer a:hover {
+  color: cyan !important;
+}
 /* ===== FOOTER ===== */
