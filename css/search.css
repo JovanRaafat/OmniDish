@@ -1,0 +1,19 @@
+.pt-10 {
+  padding-top: 8em;
+}
+
+.top-30 {
+  top: 30%;
+}
+
+.start-1 {
+  left: 1%;
+}
+
+input::placeholder {
+  color: var(--text-muted) !important;
+}
+
+input:focus {
+  box-shadow: none !important;
+}

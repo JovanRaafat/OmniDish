@@ -1,231 +1,123 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/media.css">
-  <title>Omni Dish</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="css/colors.css">
+  <link rel="stylesheet" href="css/index.css">
+  <title>OmniDish | Home</title>
 </head>
 
-  <body>
-    <!-- ===== NAVBAR ===== -->
-    <nav class="navbar">
-      <div class="logo">
-        <a href="#">
-          <img src="./images/OmniDish.png" alt="OmniDish" />
-          <span>OmniDish</span>
-        </a>
+<body class="dark-mode">
+  <!-- nav -->
+  <nav class="position-fixed top-0 w-100 z-3">
+    <div class="navbar navbar-expand-lg bg-transparent border-3 w-75 m-auto  rounded-5 mt-3 card-shadow">
+      <div class="container-fluid">
+        <div class="d-flex">
+          <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="./images/logo.png" alt="OmniDish" class="logo m-1">
+            <span class="fw-bold text-hover text-secondary fs-3">OmniDish</span>
+          </a>
+          <div class="d-flex align-items-center text-muted px-2 fs-4 text-hover">
+            <i class="fa-solid fa-sun"></i>
+          </div>
+        </div>
+        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end " id="navbarNavAltMarkup">
+          <div class="navbar-nav card-shadow bg-surface rounded-5 px-3 ">
+
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link fw-bold fs-5 text-hover text-secondary" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold fs-5 text-hover text-secondary" href="search.html">Search</a>
+
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold fs-5 text-hover text-secondary" href="Contact.html">Contact Us</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle fw-bold fs-5 text-hover text-secondary" href="#" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  pages
+                </a>
+                <ul class="dropdown-menu bg-secondary rounded-3 rounded">
+                  <li>
+                    <a class="nav-link fw-bold fs-5 text-hover text-secondary" href="countries.html">Countries</a>
+                  </li>
+                  <li>
+                    <a class="nav-link fw-bold fs-5 text-hover text-secondary" href="categories.html">Categories</a>
+                  </li>
+                </ul>
+              </li>
+
+            </ul>
+          </div>
+        </div>
       </div>
-
-
-    <ul class="nav-links">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Countries</a></li>
-      <li><a href="#">Categories</a></li>
-      <li><a href="#">Search</a></li>
-      <li><a href="#" class="rr">Random Recipe</a></li>
-    </ul>
-
-    <div class="Right">
-      <ul>
-        <li>
-          <a href="#" class="search-icon">
-            <img src="./images/search-icon.png" alt="Search" />
-          </a>
-        </li>
-        <li>
-          <a href="#" class="dark-mode-icon">
-            <img src="./images/dark-mode-icon.png" alt="Dark Mode" />
-          </a>
-        </li>
-      </ul>
     </div>
   </nav>
+  <!-- nav -->
+  <!-- footer -->
+  <footer class="bg-surface border-color border-start-0 border-end-0 border-bottom-0 py-4">
+    <div class="container">
+      <div class="row gy-4">
 
- <!-- ===== MAIN ===== -->
-   <div class="main d-flex align-items-center min-vh-100 text-white object-fit: cover p-5 ">
-  <div class="main_title">
-      <div class="content"><p class="subtitle fs-5"> Good Food • New Cultures • Amazing Places</p> 
-       <h1 class="fs1 mb-3" >Explore the world 
-        through <span>food</span></h1>
-      <p class="paragraph fs-6 mb-3 ">Discover delicious recipes from different countries and experience the flavors of the world</p></div>
-  <div class="search d-flex fs-6 p-2 mb-3 rounded-pill text-white border-0 shadow-none"><input type="text" placeholder="Search for a recipe..."> </div>
-  <div class="button fs-6 p-2 ">
-    <button class="text-white rounded-pill  ">🌍 Countries / Regions</button>
-    <button class="text-white rounded-pill ms-3 ">🍴 Categories</button>
-    <button class="text-white rounded-pill ms-3">🎲 Random Recipe</button>
-  </div>
-    </div>
-    </div>
-  
-  <!-- ===== MAIN ===== -->
-
-    
-    <!-- ===== POPULAR COUNTRIES ===== -->
-  
-   <section>
-        <div class="Header d-flex py-3 align-items-center">
-            <div class="left me-auto d-flex ms-4 align-items-center">
-                <img src="images/ChatGPT Image Oct 14, 2026, 11_55_57 PM.png" alt="Earth" class="Earth me-2">
-                <h1 class="text-white fs-4 mb-0">Popular Countries</h1>
-            </div>
-            <div class="right ms-auto d-flex me-4 align-items-center">
-                <h3 class="fs-5 me-2 mb-0">View All</h3>
-                <i class="fa-solid fa-arrow-right card-text"></i>
-            </div>
+        <div class="col-12 col-md-5 mb-3 align-items-center align-items-lg-start d-flex flex-column">
+          <div class="d-flex align-items-center gap-2 mb-2">
+            <img src="./images/logo.png" alt="OmniDish" class="logo m-1">
+            <span class="text-primary fw-bold fs-4">OmniDish</span>
+          </div>
+          <p class="text-secondary small mb-0">Good food brings people together.</p>
         </div>
-        <div class="cards d-flex justify-content-center pb-4 flex-wrap gap-3">
-            <div class="card col-8 col-sm-4 col-lg-2 border-1">
-                <img src="images/Giza Pyramids stock photo_ Image of landmark, geometry - 30444618.jpg"
-                    class="card-img-top" alt="Pyramids">
-                <div class="card-body d-flex py-3 px-3">
-                    <div class="head-left d-flex">
-                        <img src="https://flagsapi.com/EG/shiny/32.png" alt="Egypt-flag" class="me-1">
-                        <p class="card-text text-white">Egypt</p>
-                    </div>
-                    <div class="head-right ms-auto">
-                        <i class="fa-solid fa-arrow-right text-white card-text"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="card col-8 col-sm-4 col-lg-2 border-1">
-                <img src="images/European Rail Vacation Packages with Air.jpg" class="card-img-top" alt="Italy">
-                <div class="card-body d-flex py-3 px-3">
-                    <div class="head-left d-flex">
-                        <img src="https://flagsapi.com/IT/shiny/32.png" alt="Italy-flag" class="me-1">
-                        <p class="card-text text-white">Italy</p>
-                    </div>
-                    <div class="head-right ms-auto">
-                        <i class="fa-solid fa-arrow-right text-white card-text"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="card col-8 col-sm-4 col-lg-2 border-1">
-                <img src="images/Taj Mahal monument - Agra, India.jpg" class="card-img-top" alt="Taj-Mahal">
-                <div class="card-body d-flex py-3 px-3">
-                    <div class="head-left d-flex">
-                        <img src="https://flagsapi.com/IN/shiny/32.png" alt="India-flag" class="me-1">
-                        <p class="card-text text-white">India</p>
-                    </div>
-                    <div class="head-right ms-auto">
-                        <i class="fa-solid fa-arrow-right text-white card-text"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="card col-8 col-sm-4 col-lg-2 border-1">
-                <img src="images/japan.jpg" class="card-img-top" alt="Japan">
-                <div class="card-body d-flex py-3 px-3">
-                    <div class="head-left d-flex">
-                        <img src="https://flagsapi.com/JP/shiny/32.png" alt="Japan-flag" class="me-1">
-                        <p class="card-text text-white">Japan</p>
-                    </div>
-                    
-                    <div class="head-right ms-auto">
-                        <i class="fa-solid fa-arrow-right text-white card-text"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="card col-8 col-sm-4 col-lg-2 border-1">
-                <img src="images/best-states-to-make-a-living.jpg" class="card-img-top" alt="State">
-                <div class="card-body d-flex py-3 px-3">
-                    <div class="head-left d-flex">
-                        <img src="https://flagsapi.com/US/shiny/32.png" alt="US-flag" class="me-1">
-                        <p class="card-text text-white">USA</p>
-                    </div>
-                    <div class="head-right ms-auto">
-                        <i class="fa-solid fa-arrow-right text-white card-text"></i>
-                    </div>
-                </div>
-            </div>
+
+        <div class="col-6 col-md-4">
+          <h5 class="text-primary fw-semibold">Quick Links</h5>
+          <ul class="list-unstyled mb-0">
+            <li class=" my-2"><a href="index.html"
+                class="text-secondary text-hover text-decoration-none fw-bold">Home</a></li>
+            <li class=" my-2"><a href="countries.html"
+                class="text-secondary text-hover text-decoration-none fw-bold">Countries</a>
+            </li>
+            <li class=" my-2"><a href="categories.html"
+                class="text-secondary text-hover text-decoration-none fw-bold">Categories</a>
+            </li>
+            <li class=" my-2"><a href="search.html"
+                class="text-secondary text-hover text-decoration-none fw-bold">Search</a></li>
+            <li class=" my-2"><a href="contact.html"
+                class="text-secondary text-hover text-decoration-none fw-bold">Contact Us</a></li>
+          </ul>
         </div>
-    </section>
-  
-    <!-- ===== POPULAR COUNTRIES ===== -->
 
-     <!-- ===== POPULAR CATEGORIES ===== -->
+        <div class="col-6 col-md-3">
+          <h5 class="text-primary fw-semibold">Follow Us</h5>
+          <div class="d-flex gap-4 fs-5 mt-5">
+            <a href="#" class="text-primary text-hover"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="#" class="text-primary text-hover"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="text-primary text-hover"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
 
-    <section>
-      <div class="d-flex justify-content-between align-items-center px-4 py-3">
-        <h3 class="fs-2 fw-bolder mb-0 mx-5">
-          <i class="fa-solid fa-utensils"></i> Popular Categories
-        </h3>
-        <a class="view text-info text-decoration-none px-4 py-2" href="#"
-          >View All <i class="fa-solid fa-arrow-right"></i
-        ></a>
       </div>
 
-      <div class="container pb-4">
-        <div class="row justify-content-evenly align-items-center">
-          <div class="jana col-12 col-md-2">
-            <div class="img-popular position-relative">
-              <img src="./image.png" alt="chicken" />
-            </div>
-
-            <div class="card">
-              <h5 class="my-1 mx-3">
-                <i class="fa-solid fa-drumstick-bite"></i> Chicken
-              </h5>
-              <p class="mb-0 mx-2">123+ recipes</p>
-            </div>
-          </div>
-
-          <div class="jana col-12 col-md-2">
-            <div class="img-popular position-relative">
-              <img src="./image copy.png" alt="beef" />
-            </div>
-            <div class="card">
-              <h5 class="my-1 mx-3"><i class="fa-solid fa-burger"></i> Beef</h5>
-              <p class="mb-0 mx-2">98+ recipes</p>
-            </div>
-          </div>
-
-          <div class="jana col-12 col-md-2">
-            <div class="img-popular position-relative">
-              <img src="./photo_2026-10-14_21-45-45.jpg" alt="seafood" />
-            </div>
-            <div class="card">
-              <h5 class="my-1 mx-3">
-                <i class="fa-solid fa-fish"></i> seafood
-              </h5>
-              <p class="mb-0 mx-2">76+ recipes</p>
-            </div>
-          </div>
-
-          <div class="jana col-12 col-md-2">
-            <div class="img-popular position-relative">
-              <img src="./photo_2026-10-14_21-53-04.jpg" alt="Desert" />
-            </div>
-
-            <div class="card">
-              <h5 class="my-1 mx-3">
-                <i class="fa-solid fa-cake-candles"></i> Desert
-              </h5>
-              <p class="mb-0 mx-2">64+ recipes</p>
-            </div>
-          </div>
-
-          <div class="jana col-12 col-md-2">
-            <div class="img-popular position-relative">
-              <img src="./image copy 2.png" alt="Vegetarain" />
-            </div>
-            <div class="card">
-              <h5 class="my-1 mx-3">
-                <i class="fa-solid fa-leaf"></i> Vegetarain
-              </h5>
-              <p class="mb-0 mx-2">88+ recipes</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-     <!-- ===== POPULAR CATEGORIES ===== -->
-
-  <!-- ===== FOOTER ===== -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+      <p class="text-secondary text-md-end small mt-1 mb-0">
+        © 2026 OmniDish. All rights reserved.
+      </p>
+    </div>
+  </footer>
+  <!-- footer -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,156 @@
+/* Taste Around the World — Colors
+   Toggle dark mode: <html data-theme="dark"> */
+* {
+    transition: all 0.5s ease;
+}
+
+:root {
+    --primary: #f0533f;
+    --primary-hover: #d9432f;
+    --primary-soft: #fdeceb;
+
+    --bg: #f7f9fc;
+    --surface: #ffffff;
+    --border: #e5eaf2;
+
+    --text: #0f2a5c;
+    --text-muted: #6b7a94;
+    --text-on-primary: #ffffff;
+
+    --shadow: 0 4px 14px rgba(15, 42, 92, 0.08);
+
+    --logo: hue-rotate(190deg) saturate(1.2);
+
+    --overlay: 255, 255, 255;
+}
+
+[data-theme="dark"] {
+    --primary: #2dd4bf;
+    --primary-hover: #14b8a6;
+    --primary-soft: #12353a;
+
+    --bg: #0b1426;
+    --surface: #12203a;
+    --border: #223557;
+
+    --text: #ffffff;
+    --text-muted: #9aa9c2;
+    --text-on-primary: #06201d;
+
+    --shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+
+    --logo: none;
+
+    --overlay: 11, 20, 38;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+}
+
+/* Text */
+.text-primary {
+    color: var(--primary) !important;
+}
+
+.text-primary-hover:hover {
+    color: var(--primary-hover) !important;
+}
+
+.text-muted {
+    color: var(--text-muted) !important;
+}
+
+/* Background */
+.bg-primary {
+    background: var(--primary) !important;
+    color: var(--text-on-primary) !important;
+}
+
+.bg-primary-soft {
+    background: var(--primary-soft) !important;
+}
+
+.bg-surface {
+    background: var(--surface) !important;
+}
+
+/* Border / Shadow */
+.border {
+    border: 1px solid var(--border) !important;
+}
+
+.border-primary {
+    border-color: var(--primary) !important;
+}
+
+.shadow {
+    box-shadow: var(--shadow) !important;
+}
+
+/* Buttons */
+.btn-primary {
+    background: var(--primary) !important;
+    color: var(--text-on-primary) !important;
+    border: 1px solid var(--primary) !important;
+}
+
+.btn-primary:hover {
+    background: var(--primary-hover) !important;
+}
+
+.btn-outline-primary {
+    background: transparent !important;
+    color: var(--primary) !important;
+    border: 1px solid var(--primary) !important;
+}
+
+.btn-outline-primary:hover {
+    background: var(--primary) !important;
+    color: var(--text-on-primary) !important;
+}
+
+/* Card / Badge / Input */
+.card {
+    background: var(--surface) !important;
+    border: 1px solid var(--border) !important;
+    box-shadow: var(--shadow) !important;
+}
+
+.badge {
+    background: var(--primary-soft) !important;
+    color: var(--primary) !important;
+}
+
+.form-control {
+    background: var(--surface) !important;
+    color: var(--text) !important;
+    border: 1px solid var(--border) !important;
+}
+
+.form-control:focus {
+    border-color: var(--primary) !important;
+    outline: none !important;
+}
+
+
+
+
+/* nav */
+
+.logo {
+    width: 50px;
+
+    filter: var(--logo);
+}
+
+.navbar {
+    backdrop-filter: blur(5px);
+}
+
+.space {
+    height: 15vh;
+}
+
+/* nav */

@@ -1,0 +1,57 @@
+.bg-img {
+  background:
+    linear-gradient(90deg,
+      rgba(var(--overlay), 0.95) 0%,
+      rgba(var(--overlay), 0.6) 50%,
+      rgba(var(--overlay), 0) 100%),
+    url("../images/bg-contact.png");
+  background-size: cover;
+  height: 70vh;
+}
+
+form {
+  .icon {
+    color: var(--text-secondary);
+    padding: 0.7em;
+  }
+
+  input:hover,
+  textarea:hover {
+    border-color: var(--primary) !important;
+  }
+}
+
+.data {
+  .icon {
+    color: var(--primary-hover);
+  }
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  background-color: var(--primary);
+}
+
+.text-main {
+  font-size: 2em;
+  font-family: cursive;
+}
+
+.data-hover {
+  transition: all ease 0.5s;
+}
+
+.data-hover:hover {
+  transform: translateY(-10px);
+  border-color: var(--primary) !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--text-muted) !important;
+}
+
+input:focus {
+  box-shadow: none !important;
+}
