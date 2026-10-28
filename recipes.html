@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
   <meta charset="UTF-8">
@@ -15,49 +15,49 @@
 
 <body class="dark-mode">
   <!-- nav -->
-  <nav class="position-fixed top-0 w-100 z-3">
-    <div class="navbar navbar-expand-lg bg-transparent border-3 w-75 m-auto  rounded-5 mt-3 card-shadow">
+   <nav class="position-fixed top-0 w-100 z-3">
+    <div class="navbar navbar-expand-lg bg-transparent border-3 w-75 m-auto  rounded-5 mt-3 shadow">
       <div class="container-fluid">
         <div class="d-flex">
           <a class="navbar-brand d-flex align-items-center" href="index.html">
             <img src="./images/logo.png" alt="OmniDish" class="logo m-1">
-            <span class="fw-bold text-hover text-secondary fs-3">OmniDish</span>
+            <span class="fw-bold text-primary fs-3">OmniDish</span>
           </a>
-          <div class="d-flex align-items-center text-muted px-2 fs-4 text-hover">
-            <i class="fa-solid fa-sun"></i>
-          </div>
+          <button id="theme-toggle" type="button" aria-label="Toggle theme"
+            class="bg-transparent border-0 text-muted text-primary-hover px-2 fs-4">
+            <i class="fa-solid fa-sun p-1 rounded"></i>
+          </button>
         </div>
-        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+        <button class="navbar-toggler bg-primary" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
           aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end " id="navbarNavAltMarkup">
-          <div class="navbar-nav card-shadow bg-surface rounded-5 px-3 ">
+          <div class="navbar-nav shadow bg-surface rounded-5 px-3 ">
 
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link fw-bold fs-5 text-hover text-secondary" href="index.html">Home</a>
+                <a class="nav-link fw-bold fs-5 text-muted text-primary-hover" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fw-bold fs-5 text-hover text-secondary" href="search.html">Search</a>
-
+                <a class="nav-link fw-bold fs-5 text-muted text-primary-hover" href="search.html">Search</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fw-bold fs-5 text-hover text-secondary" href="Contact.html">Contact Us</a>
+                <a class="nav-link fw-bold fs-5 text-muted text-primary-hover" href="contact.html">Contact Us</a>
               </li>
 
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle fw-bold fs-5 text-hover text-secondary" href="#" role="button"
+                <a class="nav-link dropdown-toggle fw-bold fs-5 text-muted text-primary-hover" href="#" role="button"
                   data-bs-toggle="dropdown" aria-expanded="false">
                   pages
                 </a>
-                <ul class="dropdown-menu bg-secondary rounded-3 rounded">
+                <ul class="dropdown-menu bg-surface border rounded-3 ps-2 mb-2">
                   <li>
-                    <a class="nav-link fw-bold fs-5 text-hover text-secondary" href="countries.html">Countries</a>
+                    <a class="nav-link fw-bold fs-5 text-muted text-primary-hover" href="countries.html">Countries</a>
                   </li>
                   <li>
-                    <a class="nav-link fw-bold fs-5 text-hover text-secondary" href="categories.html">Categories</a>
+                    <a class="nav-link fw-bold fs-5 text-muted text-primary-hover" href="categories.html">Categories</a>
                   </li>
                 </ul>
               </li>
@@ -69,6 +69,110 @@
     </div>
   </nav>
   <!-- nav -->
+  <!-- Start Header -->
+  <header class="Italy-Header ps-5 pb-5">
+    <div class="d-flex align-items-center text-light fs-4 pt-5 pb-2">
+      <p class="Back"> <i class="fa-solid fa-arrow-left me-1 fs-5"></i><span class="fs-4">
+          Back to Countries</span></p>
+    </div>
+    <div class="d-flex Italy ">
+      <img src="images/Italy flag.jpg" alt="Italy" class="ItalyFlag border-none rounded-3 me-3">
+      <div class="text-light">
+        <h3>Italy</h3>
+        <p>La doice vita, on your plate</p>
+      </div>
+    </div>
+  </header>
+  <!-- End Header -->
+  <!-- Start Popular Recipes -->
+  <section class="Italy-Main ">
+    <div class="container my-4">
+      <div class=" row mb-3 ">
+        <h3 class="fs-3"> <i class="fa-solid fa-utensils me-2"></i>Popular Italian Recipes</h3>
+      </div>
+      <div class="row d-flex justify-content-center g-4 mb-3">
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card border border-1 h-100">
+            <img src="images/pizza.jpg" class="card-img-top" alt="Pizza">
+            <div class="card-body">
+              <h5 class="card-title mb-3">Pizza</h5>
+              <div class="d-flex align-items-center">
+                <a href="#" class="btn btn-primary rounded rounded-5 ">Main Course</a>
+                <i class="fa-solid fa-arrow-right ms-auto"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card border border-1 h-100">
+            <img src="images/pasta.jpg" class="card-img-top" alt="Pasta">
+            <div class="card-body">
+              <h5 class="card-title mb-3">Pasta</h5>
+              <div class="d-flex align-items-center">
+                <a href="#" class="btn btn-primary rounded rounded-5 ">Main Course</a>
+                <i class="fa-solid fa-arrow-right ms-auto"></i>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card border border-1 h-100">
+            <img src="images/lasagne.jpg" class="card-img-top" alt="Lasagne">
+            <div class="card-body">
+              <h5 class="card-title mb-3">Lasagne</h5>
+              <div class="d-flex align-items-center">
+                <a href="#" class="btn btn-primary rounded rounded-5 ">Main Course</a>
+                <i class="fa-solid fa-arrow-right ms-auto"></i>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="row d-flex justify-content-center g-4  mb-3">
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card border border-1">
+            <img src="images/tiramisu.jpg" class="card-img-top" alt="tiramisu">
+            <div class="card-body">
+              <h5 class="card-title mb-3">Tiramisu</h5>
+              <div class="d-flex align-items-center">
+                <a href="#" class="btn btn-primary rounded rounded-5 ">Main Course</a>
+                <i class="fa-solid fa-arrow-right ms-auto"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card border border-1">
+            <img src="images/Caprese Salad.jpg" class="card-img-top" alt="Salad">
+            <div class="card-body">
+              <h5 class="card-title mb-3">Caprese Salad</h5>
+              <div class="d-flex align-items-center">
+                <a href="#" class="btn btn-primary rounded rounded-5 ">Main Course</a>
+                <i class="fa-solid fa-arrow-right ms-auto"></i>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card border border-1">
+            <img src="images/Risotto.jpg" class="card-img-top" alt="risitto">
+            <div class="card-body">
+              <h5 class="card-title mb-3">Risitto</h5>
+              <div class="d-flex align-items-center">
+                <a href="#" class="btn btn-primary rounded rounded-5 ">Main Course</a>
+                <i class="fa-solid fa-arrow-right ms-auto"></i>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Popular Recipes -->
   <!-- footer -->
   <footer class="bg-surface border-color border-start-0 border-end-0 border-bottom-0 py-4">
     <div class="container">
