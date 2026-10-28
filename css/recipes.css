@@ -1,0 +1,21 @@
+.Italy-Header {
+    background-image: url(../images/Italy-Background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 43vh;
+    padding-top: 5rem;
+}
+
+.ItalyFlag {
+    width: 55px;
+    height: 45px;
+}
+
+
+.card-img-top {
+    height: 14rem;
+    object-fit: cover;
+}
+
+
