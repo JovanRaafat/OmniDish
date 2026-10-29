@@ -1,6 +1,8 @@
 .banner {
   height: 40vh;
-  background: url("../images/Banner.jpg") center/cover no-repeat;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+    url("../images/Banner.jpg") center/cover no-repeat;
 }
 .country {
   border: 1px solid rgba(255, 255, 255, 0.08);
