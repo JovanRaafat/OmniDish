@@ -1,20 +1,19 @@
 .banner {
-height: 40vh;
-background: url("/Users/user/Desktop/NTI/GitHub/OmniDish/images/Banner.jpg")
-center/cover no-repeat;
+  height: 40vh;
+  background: url("../images/Banner.jpg") center/cover no-repeat;
 }
 .country {
-border: 1px solid rgba(255, 255, 255, 0.08);
-transition:
-transform 0.2s ease,
-border-color 0.2s ease;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease;
 }
 .country:hover {
-transform: translateY(-3px);
-border-color: rgba(255, 255, 255, 0.2);
-cursor: pointer;
+  transform: translateY(-3px);
+  border-color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
 }
 .card-img img {
-height: 150px;
-object-fit: cover;
+  height: 150px;
+  object-fit: cover;
 }
