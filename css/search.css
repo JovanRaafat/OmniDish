@@ -17,3 +17,7 @@ input::placeholder {
 input:focus {
   box-shadow: none !important;
 }
+
+.card:hover {
+  transform: translateY(-4px);
+}
