@@ -1,27 +1,22 @@
-.Italy-Header {
-    background:
-        linear-gradient(90deg,
-            rgba(var(--overlay), 0.95) 0%,
-            rgba(var(--overlay), 0.6) 35%,
-            rgba(var(--overlay), 0) 65%),
-        url(../images/Italy-Background.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 50vh;
-    /* padding: 6rem 0rem 3rem 3.5rem ; */
-}
+    .Italy-Header {
+        background-image: url(../images/Italy-Background.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 43vh;
+        padding-top: 5rem;
+    }
 
-.ItalyFlag {
-    width: 4rem;
-    height: 3rem;
-}
+    .ItalyFlag {
+        width: 3.6rem;
+        height: 2.8rem;
+    }
 
 
-.card-img-top {
-    height: 17rem;
-    object-fit: cover;
-}
+    .card-img-top {
+        height: 14rem;
+        object-fit: cover;
+    }
 
 .card:hover {
     transform: translateY(-4px);
