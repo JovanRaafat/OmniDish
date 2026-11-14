@@ -22,3 +22,12 @@
   height: 150px;
   object-fit: cover;
 }
+.country,
+.country .card,
+.country .card-title {
+  transition:
+    transform 0.7s ease,
+    border-color 0.7s ease,
+    background-color 0.7s ease,
+    color 0.7s ease;
+}
