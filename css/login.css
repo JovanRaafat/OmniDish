@@ -1,0 +1,80 @@
+.login .form-floating > .form-control {
+    height: 50px;
+    min-height: 50px;
+}
+.login .form-floating > label {
+padding: 12px;
+}
+.card{
+    border: 1px solid var(--primary-hover) !important;
+}
+
+.login h2{
+    color: var(--text);
+}
+.login p{
+    color: var(--text-muted);
+}
+.email i{
+    color: var(--primary) !important;
+}
+.password i{
+    color: var(--primary) !important;
+}
+.email label {
+    color: var(--text-muted) !important;
+}
+.password label {
+    color: var(--text-muted) !important;
+}
+.forgot button {
+    background-color: var(--primary);
+}
+.forgot button:hover {
+    background-color: var(--primary-hover);
+}
+.link a{
+    color: var(--text-muted) !important;
+}
+.forgot i , button {
+    color: var(--bg) !important;
+}
+.login hr {
+    color: var(--text-muted);
+}
+.or{
+    color: var(--text);
+}
+
+.continue button{
+    background-color: var(--surface) !important;
+    border: 1px solid var(--border) !important;
+    color: var(--text) !important;
+}
+.continue button :hover{
+    background-color: var(--surface) !important;
+    border: 1px solid var(--border) !important;
+    color: var(--text) !important;
+}
+
+.icon{
+    color: var(--primary) !important;
+}
+
+.signup p{
+    color: var(--text-muted) !important;
+}
+.signup a{
+    color: var(--primary) !important;
+}
+.main{
+    background-color: var(--surface);
+    /* border: 1px solid var(--border) !important; */
+}
+.logo {
+    color: var( --logo);
+}
+.email .form-floating > label::after,
+.password .form-floating > label::after {
+    background: transparent !important;
+}
