@@ -9,7 +9,7 @@ padding: 12px;
     border: 1px solid var(--primary-hover) !important;
 }
 
-.login h2{
+.login h3{
     color: var(--text);
 }
 .login p{
@@ -77,4 +77,17 @@ padding: 12px;
 .email .form-floating > label::after,
 .password .form-floating > label::after {
     background: transparent !important;
+}
+.img_card{
+    background:
+    linear-gradient(
+      90deg,
+      rgba(var(--overlay), 0.95) 0%,
+      rgba(var(--overlay), 0.6) 50%,
+      rgba(var(--overlay), 0) 100%
+    ),
+    url(../images/image\ copy.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
