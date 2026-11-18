@@ -49,3 +49,7 @@
 .social:hover {
     background-color: var(--shadow) !important;
 }
+
+.text-light {
+    color: var(--text) !important;
+}
