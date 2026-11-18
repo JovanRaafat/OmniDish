@@ -14,7 +14,7 @@
 }
 
 .form-control::placeholder {
-  color: #ffffff;
+   color: var(--text);
 }
 
 .card:hover {

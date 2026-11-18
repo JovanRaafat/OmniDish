@@ -1,0 +1,91 @@
+.home{
+     background:
+    linear-gradient(
+      90deg,
+      rgba(var(--overlay), 0.95) 0%,
+      rgba(var(--overlay), 0.6) 50%,
+      rgba(var(--overlay), 0) 100%
+    ),
+    url("../images/signup2.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+ height: 70vh;
+}
+.form-control::placeholder {
+  color: #ffffff;
+}
+
+ .image{
+      background:
+   
+    url("../images/sign_up.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+border: 1px solid ;
+height: 30vh;
+ }
+ .form{
+    border: 1px solid;
+ }
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: #26364d;
+}
+
+.divider span {
+  font-size: 20px;
+}
+.b1,.b2{
+    border: 0px;
+   color: var(--text);
+}
+
+
+.input-box {
+    position: relative;
+  
+    margin-bottom: 15px;
+}
+
+.input-box input {
+   
+    padding: 8px 45px;
+    border: 1px solid #263e59;
+    border-radius: 12px;
+    background:var(--surface) ;
+    color: var(--text);
+   
+}
+
+.input-box input::placeholder {
+    color: var(--text);
+}
+
+.input-box > i:first-child {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text);
+}
+
+.input-box .eye-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text);
+    cursor: pointer;
+}
