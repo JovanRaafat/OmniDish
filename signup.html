@@ -78,20 +78,20 @@
   <!-- home -->
   <div class=" container-fluid p-3 p-lg-5 ">
     <div class="row g-3">
-      
-        <div class="right col-lg-7  col-12">
-          <div class="home d-flex rounded-3 align-items-center ">
-            <div class="content_image ps-3 ps-lg- pe-3">
-              <h1 class="col-12 col-md-7 ">Create Your Account</h1>
-              <p class="col-12 col-md-9 fs-5">Join us and explore the world through delicious food. 🌍 </p>
-            </div>
-          </div>
-          <div class=" mt-2">
-            <div class="image rounded-3 col-12 border-primary">
-            </div>
+
+      <div class="right col-lg-7  col-12">
+        <div class="home d-flex rounded-3 align-items-center ">
+          <div class="content_image ps-3 ps-lg- pe-3">
+            <h1 class="col-12 col-md-7 ">Create Your Account</h1>
+            <p class="col-12 col-md-9 fs-5">Join us and explore the world through delicious food. 🌍 </p>
           </div>
         </div>
-    
+        <div class=" mt-2">
+          <div class="image rounded-3 col-12 border-primary">
+          </div>
+        </div>
+      </div>
+
       <div class="container col-lg-5 col-12  d-flex justify-content-center ">
         <div class=" form col-12 mb-2 mt-2 rounded-3 border-primary">
           <div class="content_form p-3 p-md-4 p-lg-5   ">
@@ -104,31 +104,44 @@
               <!-- Full Name -->
               <div class="input-box">
                 <i class="fa-solid fa-user"></i>
-                <input type="text" class="col-12 form-control" placeholder="Full Name">
+                <input type="text" class="col-12 form-control" placeholder="Full Name" id="full_name">
+              </div>
+              <div id="valid_full_name" class="invalid_input_feedback">
               </div>
 
               <!-- Email Address -->
               <div class="input-box">
                 <i class="fa-solid fa-envelope"></i>
-                <input type="email" class="col-12 form-control" placeholder="Email Address">
+                <input type="email" class="col-12 form-control" placeholder="Email Address" id="email">
+              </div>
+              <div id="valid_email" class="invalid_input_feedback">
+
               </div>
 
               <!-- Password -->
               <div class="input-box">
                 <i class="fa-solid fa-lock"></i>
-                <input type="password" class="col-12 form-control" placeholder="Password">
-                <i class="fa-regular fa-eye eye-icon"></i>
+                <input type="password" class="col-12 form-control" placeholder="Password" id="password">
+                <button class="" type="button" onclick="TogglePassword('password', this)"><i
+                    class="fa-regular fa-eye eye-icon"></i></button>
               </div>
+              <div id="valid_password" class="invalid_input_feedback"></div>
 
               <!-- Confirm Password -->
               <div class="input-box">
                 <i class="fa-solid fa-lock"></i>
-                <input type="password" class="col-12 form-control " placeholder="Confirm Password">
-                <i class="fa-regular fa-eye eye-icon"></i>
+                <input type="password" class="col-12 form-control " placeholder="Confirm Password" id="passwordcon">
+                <button type="button" onclick="TogglePassword('passwordcon', this)"><i
+                    class="fa-regular fa-eye eye-icon"></i></button>
               </div>
-              <button type="button" class="btn mt-2 col-12 btn-sm rounded rounded-4 button-4 bg-primary p-2"> <i
-                  class="fa-solid fa-user me-2"></i> Create
+              <div id="valid_passwordcon" class="invalid_input_feedback"></div>
+
+
+              <button type="button" class="btn mt-2 col-12 btn-sm rounded rounded-4 button-4 bg-primary p-2"
+                onclick="sign_up()" id="btn"> <i class="fa-solid fa-user me-2"></i> Create
                 Account</button>
+
+
               <div class="divider">
                 <span>or</span>
               </div>
@@ -137,7 +150,8 @@
               <button type="button" class="b2 rounded rounded-pill bg-surface p-2 col-12 mt-2  "> <i
                   class="fa-brands fa-facebook facebook-icon me-2"></i> Continue with Facebook </button>
               <div class="text-center mt-2">
-                <p>Alraedy have an account? <a class="text-primary text-decoration-none" href="./login.html"> Login</a> </p>
+                <p>Alraedy have an account? <a class="text-primary text-decoration-none" href="./login.html"> Login</a>
+                </p>
               </div>
             </div>
 
