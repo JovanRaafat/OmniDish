@@ -98,7 +98,8 @@ function search_items(searchValue) {
   const filtered = [];
   for (const c of countries) {
     let country_names = c.name.toLowerCase().includes(searchValue);
-    if (country_names) {
+    let country_region = c.region.toLowerCase().includes(searchValue);
+    if (country_names || country_region) {
       filtered.push(c);
     }
   }
