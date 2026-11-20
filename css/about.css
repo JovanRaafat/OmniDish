@@ -1,6 +1,10 @@
 .hero {
     height: 45vh;
-    background-image: url(../images/20969954497965720.jpg);
+    background: linear-gradient(90deg,
+            rgba(var(--overlay), 0.95) 0%,
+            rgba(var(--overlay), 0.6) 50%,
+            rgba(var(--overlay), 0) 100%), 
+            url(../images/20969954497965720.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -25,7 +29,7 @@
 .members:hover {
     transform: translateY(-3px);
     border-color: var(--primary) !important;
-    box-shadow: 0 12px 34px rgba(34, 211, 197, .12) !important;
+    box-shadow: 0 12px 34px var(--primary-soft) !important;
 }
 
 .members img {
@@ -34,7 +38,7 @@
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid var(--primary);
-    box-shadow: 0 0 0 5px rgba(34, 211, 197, .12);
+    box-shadow: 0 0 0 5px var( --primary-soft);
 }
 
 .social {
