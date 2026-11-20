@@ -83,6 +83,13 @@
         recipes</p>
     </div>
   </header>
+  <!-- search -->
+  <form class="d-flex w-75 m-auto position-relative my-4" role="search">
+    <i class="fa-solid fa-magnifying-glass text-primary position-absolute start-1 top-30 fs-3 ps-2"></i>
+    <input class="form-control ps-5 py-2 rounded rounded-4 bg-surface border-color fs-3 " type="search"
+      placeholder="Search" id="countriesSearch" aria-label="Search" />
+  </form>
+  <!-- search -->
   <main class="pb-5 container">
     <!-- Loading -->
     <div id="countriesLoading" class="text-center py-5">
@@ -91,7 +98,7 @@
     </div>
 
     <!-- Error message -->
-    <div id="countriesMessage" class="text-center py-4"></div>
+    <div id="countriesMessage" class="text-center py-2"></div>
 
     <!-- Countries cards -->
     <div class="row g-4 justify-content-center" id="countriesContainer"></div>
