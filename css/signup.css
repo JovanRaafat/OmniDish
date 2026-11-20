@@ -53,7 +53,7 @@
 .input-box {
   position: relative;
 
-  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .input-box input {
@@ -100,7 +100,19 @@
 
 .invalid_input_feedback {
   width: 100%;
-  margin-top: 0.25rem;
   font-size: 0.875em;
   color: #dc3545;
+}
+.btn-surface {
+  background-color: var(--surface) !important;
+}
+.btn-surface:hover {
+  background-color: var(--primary-hover) !important;
+  color: var(--text-on-primary);
+}
+.btn-primary {
+  transition: all 0.5s ease-in;
+}
+.btn-primary:hover {
+  color: var(--overlay) !important;
 }
