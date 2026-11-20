@@ -69,7 +69,6 @@ padding: 12px;
 }
 .main{
     background-color: var(--surface);
-    /* border: 1px solid var(--border) !important; */
 }
 .logo {
     color: var( --logo);
@@ -78,16 +77,65 @@ padding: 12px;
 .password .form-floating > label::after {
     background: transparent !important;
 }
-.img_card{
-    background:
-    linear-gradient(
-      90deg,
-      rgba(var(--overlay), 0.95) 0%,
-      rgba(var(--overlay), 0.6) 50%,
-      rgba(var(--overlay), 0) 100%
-    ),
-    url(../images/image\ copy.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
+    .img_card{
+        background:
+        linear-gradient(
+        90deg,
+        rgba(var(--overlay), 0.95) 0%,
+        rgba(var(--overlay), 0.6) 50%,
+        rgba(var(--overlay), 0) 100%
+        ),
+        url(../images/image\ copy.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    }
+
+    .responsive-title {
+    font-size: 1.4rem; 
+    }
+    .responsive-text {
+    font-size: 0.6rem;
+    }
+
+    @media (min-width: 768px) {
+    .responsive-title {
+        font-size: 2.5rem; /
+    }
+    .responsive-text {
+        font-size: 1rem;
+    }
+    .login .form-floating > .form-control:-webkit-autofill,
+    .login .form-floating > .form-control:-webkit-autofill:hover,
+    .login .form-floating > .form-control:-webkit-autofill:focus,
+    .login .form-floating > .form-control:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 1000px var(--surface) inset !important;
+    -webkit-text-fill-color: var(--text) !important;
+    transition: background-color 5000s ease-in-out 0s;
+    }
+
+    .email {
+    position: relative;
+    }
+
+    .email i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    pointer-events: none;
+    }
+
+    .login .email .form-control.is-invalid {
+    border: 1px solid #dc3545 !important;
+    box-shadow: 0 0 0 0.15rem rgba(220, 53, 69, 0.15);
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e") !important;
+    background-repeat: no-repeat !important;
+    background-position: right 12px center !important;
+    background-size: 16px 16px !important;
+    padding-right: 40px !important;
+    }
+
+    .login .email .form-control.is-invalid ~ .invalid-feedback {
+    display: block;
+    }}

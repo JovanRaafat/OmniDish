@@ -6,7 +6,7 @@
       rgba(var(--overlay), 0) 100%),
     url("../images/home.jpeg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 80%;
   background-size: cover;
   height: 80vh;
 }
