@@ -1,5 +1,5 @@
-.home{
-     background:
+.home {
+  background:
     linear-gradient(
       90deg,
       rgba(var(--overlay), 0.95) 0%,
@@ -10,30 +10,27 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
- height: 70vh;
+  height: 70vh;
 }
 .form-control::placeholder {
   color: #ffffff;
 }
 
- .image{
-      background:
-   
-    url("../images/sign_up.jpeg");
+.image {
+  background: url("../images/sign_up.jpeg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-border: 1px solid ;
-height: 30vh;
- }
- .form{
-    border: 1px solid;
- }
+  border: 1px solid;
+  height: 30vh;
+}
+.form {
+  border: 1px solid;
+}
 .divider {
   display: flex;
   align-items: center;
   gap: 15px;
-  
 }
 
 .divider::before,
@@ -47,45 +44,75 @@ height: 30vh;
 .divider span {
   font-size: 20px;
 }
-.b1,.b2{
-    border: 0px;
-   color: var(--text);
+.b1,
+.b2 {
+  border: 0px;
+  color: var(--text);
 }
 
-
 .input-box {
-    position: relative;
-  
-    margin-bottom: 15px;
+  position: relative;
+
+  margin-top: 15px;
 }
 
 .input-box input {
-   
-    padding: 8px 45px;
-    border: 1px solid #263e59;
-    border-radius: 12px;
-    background:var(--surface) ;
-    color: var(--text);
-   
+  padding: 8px 45px;
+  border: 1px solid #263e59;
+  border-radius: 12px;
+  background: var(--surface);
+  color: var(--text);
 }
 
 .input-box input::placeholder {
-    color: var(--text);
+  color: var(--text);
 }
 
 .input-box > i:first-child {
-    position: absolute;
-    left: 15px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: var(--text);
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text);
 }
 
-.input-box .eye-icon {
-    position: absolute;
-    right: 15px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: var(--text);
-    cursor: pointer;
+.input-box button {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  color: var(--text);
+  cursor: pointer;
+}
+.valid_input {
+  border: 1px solid #198754 !important;
+  outline: none;
+}
+
+.invalid_input {
+  border: 1px solid #dc3545 !important;
+  outline: none;
+}
+
+.invalid_input_feedback {
+  width: 100%;
+  font-size: 0.875em;
+  color: #dc3545;
+}
+.btn-surface {
+  background-color: var(--surface) !important;
+}
+.btn-surface:hover {
+  background-color: var(--primary-hover) !important;
+  color: var(--text-on-primary);
+}
+.btn-primary {
+  transition: all 0.5s ease-in;
+}
+.btn-primary:hover {
+  color: var(--overlay) !important;
 }
