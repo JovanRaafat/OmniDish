@@ -11,7 +11,7 @@
 
   <link rel="stylesheet" href="css/colors.css">
   <link rel="stylesheet" href="css/countries.css">
-  <title>OmniDish | Categories</title>
+  <title>OmniDish | Countries</title>
 </head>
 
 <body>
@@ -84,92 +84,18 @@
     </div>
   </header>
   <main class="pb-5 container">
-
-    <div class="row gap-5 justify-content-center text-decoration-none">
-
-
-      <div class="col-10 col-sm-5 col-md-3 g-0 card country">
-        <a class="text-decoration-none" href="./recipes.html">
-          <div class="card h-50 card-img">
-            <div>
-              <img src="./images/Egypt_Card.jpeg" class="card-img-top" alt="...">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title text-muted"><span class="fi fi-eg me-2 flag-border"></span>Egypt</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <div class="col-10 col-sm-5 col-md-3 g-0 card country">
-        <a class="text-decoration-none" href="./recipes.html">
-          <div class="card h-50 card-img">
-            <div>
-              <img src="./images/Italy_Card.avif" class="card-img-top" alt="">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title text-muted">
-                <span class="fi fi-it me-2 flag-border"></span>Italy
-              </h5>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class=" col-10 col-sm-5 col-md-3 g-0 card country">
-        <a class="text-decoration-none" href="./recipes.html">
-          <div class="card h-50 card-img">
-            <div>
-              <img src="./images/India_Card.jpg" class="card-img-top" alt="">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title text-muted"> <span class="fi fi-in me-2 flag-border"></span>India</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <div class="col-10 col-sm-5 col-md-3 g-0 card country">
-        <a class="text-decoration-none" href="./recipes.html">
-          <div class="card h-50 card-img">
-            <div>
-              <img src="./images/Mexico_Card.jpg" class="card-img-top" alt="...">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title text-muted"><span class="fi fi-mx me-2 flag-border"></span>Mexico</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-10 col-sm-5 col-md-3 g-0 card country">
-        <a class="text-decoration-none" href="./recipes.html">
-          <div class="card h-50 card-img">
-            <div>
-              <img src="./images/Japan_Card.jpg" class="card-img-top" alt="...">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title text-muted"><span class="fi fi-jp me-2 flag-border"></span>Japan</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-10 col-sm-5 col-md-3 g-0 card country">
-        <a class="text-decoration-none" href="./recipes.html">
-          <div class="card h-50 card-img">
-            <div>
-              <img src="./images/USA_Card.jpg" class="card-img-top" alt="...">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title text-muted"><span class="fi fi-us me-2 flag-border"></span>USA</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-
-
+    <!-- Loading -->
+    <div id="countriesLoading" class="text-center py-5">
+      <div class="spinner-border text-primary" role="status"></div>
+      <p class="text-muted mt-3">Loading countries...</p>
     </div>
 
-  </main>
-  <!-- footer -->
+    <!-- Error message -->
+    <div id="countriesMessage" class="text-center py-4"></div>
+
+    <!-- Countries cards -->
+    <div class="row g-4 justify-content-center" id="countriesContainer"></div>
+  </main><!-- footer -->
   <footer class="bg-surface border border-start-0 border-end-0 border-bottom-0 py-4">
     <div class="container">
       <div class="row gy-4">
@@ -223,6 +149,7 @@
   <!-- footer -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/theme.js"></script>
+  <script src="js/countries.js"></script>
 </body>
 
 
