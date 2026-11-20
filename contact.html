@@ -23,8 +23,8 @@
             <img src="./images/logo.png" alt="OmniDish" class="logo m-1">
             <span class="fw-bold text-primary fs-3 d-none d-sm-block">OmniDish</span>
           </a>
-          <div class="d-flex align-items-center text-muted px-2 fs-4 ">
-            <i class="fa-solid fa-sun text-primary-hover" id="theme-toggle"></i>
+          <div class="d-flex align-items-center text-muted px-2 fs-4 cursor-">
+            <i class="fa-solid fa-sun text-primary-hover pointer " id="theme-toggle"></i>
           </div>
         </div>
         <button class="navbar-toggler bg-primary" type="button" data-bs-toggle="collapse"
@@ -89,7 +89,8 @@
     <!-- contact -->
     <section class="d-flex p-md-5 p-1 gap-5 flex-lg-row flex-column justify-content-center align-content-center">
       <!-- form -->
-      <form class="row g-3 container col-lg-6 col-12 m-auto border rounded-4 p-3 bg-surface shadow my-0">
+      <form id="contactForm"
+        class="row g-3 container col-lg-6 col-12 m-auto border rounded-4 p-3 bg-surface shadow my-0">
         <div class="d-flex gap-4 align-items-center ">
           <i class="fa-solid fa-paper-plane fs-1 text-primary"></i>
           <div class="flex-column d-flex justify-content-center align-items-center align-items-md-start ">
@@ -103,13 +104,19 @@
           <div class="position-relative">
             <i class="fa-regular fa-user position-absolute icon text-primary start-0 ps-3 "></i>
             <input type="text" class="form-control rounded-4 ps-5" id="inputName" placeholder="Full Name">
+            <div class="invalid-feedback">
+              Please enter your full name (at least 3 characters).
+            </div>
           </div>
         </div>
         <div class="col-md-6 ">
           <label for="inputEmail" class="form-label">Email Address</label>
           <div class="position-relative">
             <i class="fa-regular fa-envelope position-absolute start-0 ps-3  icon text-primary"></i>
-            <input type="email" class="form-control rounded-4 ps-5" id="inputEmail" placeholder="your email address">
+            <input type="text" class="form-control rounded-4 ps-5" id="inputEmail" placeholder="your email address">
+            <div class="invalid-feedback">
+              Please enter a valid email address.
+            </div>
           </div>
         </div>
         <div class="col-12 position-relative">
@@ -117,6 +124,10 @@
           <div class="position-relative">
             <i class="fa-solid fa-tag position-absolute start-0 ps-3  icon text-primary"></i>
             <input type="text" class="form-control rounded-4 ps-5" id="inputSubject" placeholder="Select a subject">
+
+            <div class="invalid-feedback">
+              Subject must be at least 3 characters.
+            </div>
           </div>
         </div>
         <div class="mb-3 position-relative">
@@ -126,10 +137,15 @@
             <i class="fa-regular fa-message position-absolute start-0 ps-3  icon text-primary"></i>
             <textarea class="form-control rounded-4 ps-5" id="inputMessage" rows="3"
               placeholder="Write your message here ..."></textarea>
+            <div class="invalid-feedback">
+              Message must be at least 10 characters.
+            </div>
           </div>
         </div>
         <div>
           <button type="submit" class="btn btn-primary fw-bold fs-5 rounded-4 w-100">Send Message</button>
+        </div>
+        <div id="formAlert" class="alert d-none" role="alert">
         </div>
       </form>
       <!-- form -->

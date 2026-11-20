@@ -1,18 +1,21 @@
 const countriesContainer = document.getElementById("countriesContainer");
 const countriesLoading = document.getElementById("countriesLoading");
 const countriesMessage = document.getElementById("countriesMessage");
+const searchInput = document.getElementById("countriesSearch");
+let countries = [];
 
 async function getCountries() {
   showLoading();
 
   try {
-    const response = await fetch("https://countries.dev/countries?fields=name,alpha2Code,capital,region,flag");
-    const countries = await response.json();
+    const response = await fetch(
+      "https://countries.dev/countries?fields=name,alpha2Code,capital,region,flag",
+    );
+    countries = await response.json();
 
     console.log(countries);
     displayCountries(countries);
   } catch (error) {
-
     countriesMessage.innerHTML = `
       <div class="alert alert-danger mx-auto" style="max-width: 600px;">
         <i class="fa-solid fa-circle-exclamation me-2"></i>
@@ -88,3 +91,19 @@ function hideLoading() {
 }
 
 getCountries();
+searchInput.addEventListener("input", function (e) {
+  search_items(e.target.value.trim().toLowerCase());
+});
+function search_items(searchValue) {
+  const filtered = [];
+  for (const c of countries) {
+    let country_names = c.name.toLowerCase().includes(searchValue);
+    if (country_names) {
+      filtered.push(c);
+    }
+  }
+  displayCountries(filtered);
+}
+searchInput.closest("form").addEventListener("submit", function (e) {
+  e.preventDefault();
+});
