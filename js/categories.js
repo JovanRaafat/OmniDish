@@ -63,3 +63,21 @@ function displayCategories(categories) {
 console.log(categories);
 
 getCategories();
+
+  const categoriesInput = document.getElementById("categoriesSearch");
+  categoriesInput.addEventListener("input", function (e) {
+    search_items(e.target.value.trim().toLowerCase());
+  });
+  function search_items(searchValue) {
+    const filtered = [];
+    for (const i of categories) {
+      let categories_names = i.strCategory.toLowerCase().includes(searchValue);
+      if (categories_names) {
+        filtered.push(i);
+      }
+    }
+    displayCategories(filtered);
+  }
+  categoriesInput.closest("form").addEventListener("submit", function (e) {
+    e.preventDefault();
+  });
