@@ -8,7 +8,7 @@
     ),
     url("../images/signup2.jpeg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 70%;
   background-size: cover;
   height: 70vh;
 }
@@ -19,7 +19,7 @@
 .image {
   background: url("../images/sign_up.jpeg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 8%;
   background-size: cover;
   border: 1px solid;
   height: 30vh;

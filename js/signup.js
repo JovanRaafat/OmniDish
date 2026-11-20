@@ -1,3 +1,16 @@
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+import {
+  getAuth,
+  signInWithRedirect,
+  getRedirectResult,
+  GoogleAuthProvider,
+} from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
+window.validate_full_name = validate_full_name;
+window.validate_email = validate_email;
+window.validate_password = validate_password;
+window.validate_password_con = validate_password_con;
+window.sign_up = sign_up;
+window.TogglePassword = TogglePassword;
 function validate_full_name() {
   let full_name = document.getElementById("full_name");
   let fullname_rgx = /^[\p{L}'-]{2,}(?:\s+[\p{L}'-]{2,})+$/u;
@@ -169,4 +182,35 @@ function TogglePassword(inputId, button) {
     icon.classList.remove("fa-eye-slash");
     icon.classList.add("fa-eye");
   }
+}
+const firebaseConfig = {
+  apiKey: "AIzaSyBBH3H8sjNJEfyTppOeHhydOXffPuxmoqc",
+  authDomain: "omnidish-8605a.firebaseapp.com",
+  projectId: "omnidish-8605a",
+  storageBucket: "omnidish-8605a.firebasestorage.app",
+  messagingSenderId: "41956723520",
+  appId: "1:41956723520:web:4280a187b905cfa1bf88a5",
+};
+
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+
+getRedirectResult(auth)
+  .then((result) => {
+    if (result) {
+      console.log("Logged in successfully:", result.user);
+      window.location.href = "index.html";
+    }
+  })
+  .catch((error) => {
+    console.error("Redirect error:", error.message);
+  });
+
+const google_Btn_signup = document.getElementById("google_btn_signup");
+if (google_Btn_signup) {
+  google_Btn_signup.addEventListener("click", () => {
+    const provider = new GoogleAuthProvider();
+    provider.setCustomParameters({ prompt: "select_account" });
+    signInWithRedirect(auth, provider);
+  });
 }
