@@ -8,12 +8,10 @@
     ),
     url("../images/home.jpeg");
   background-repeat: no-repeat;
-  background-position:80%;
+  background-position: 80%;
   background-size: cover;
   height: 80vh;
 }
-
-
 
 .card:hover {
   transform: translateY(-4px);
