@@ -8,14 +8,12 @@
     ),
     url("../images/home.jpeg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position:80%;
   background-size: cover;
   height: 80vh;
 }
 
-.form-control::placeholder {
-   color: var(--text);
-}
+
 
 .card:hover {
   transform: translateY(-4px);
