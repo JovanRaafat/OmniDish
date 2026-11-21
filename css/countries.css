@@ -2,7 +2,7 @@
   height: 40vh;
   background:
     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
-    url("../images/Banner.jpg") center/cover no-repeat;
+    url("../images/countries/Banner.jpg") center/cover no-repeat;
 }
 
 .country {
