@@ -67,13 +67,14 @@ button {
 }
 
 .continue button :hover {
-    background-color: var(--surface) !important;
-    /* border: 1px solid var(--border) !important; */
+    /* background-color: var(--surface) !important; */
+    border: 1px solid var(--border) !important;
     color: var(--text) !important;
+
 }
 
 .icon {
-    color: var(--primary) !important;
+    /* color: var(--primary) !important; */
 }
 
 .signup p {
@@ -224,4 +225,31 @@ input::-ms-clear {
 
 .login .password .form-control.is-invalid~.invalid-feedback {
     display: block;
+}
+
+.valid_input{
+  border: 1px solid #198754 !important;
+  outline: none;
+}
+.invalid_input{
+  border: 1px solid #dc3545 !important;
+  outline: none;
+}
+.invalid_input_feedback{
+width: 100%;
+font-size: 0.875em;
+color:#dc3545 ;
+}
+.btn-surface {
+  background-color: var(--surface) !important;
+}
+.btn-surface:hover {
+  background-color: var(--primary-hover) !important;
+  color: var(--text-on-primary);
+}
+.btn-primary {
+  transition: all 0.5s ease-in;
+}
+.btn-primary:hover {
+  color: var(--overlay) !important;
 }

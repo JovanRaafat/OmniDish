@@ -89,47 +89,45 @@
                 <h3>Login to Your Account</h3>
                 <p>Continue your culinary journey around the world</p>
               </div>
-              <form id="loginform">
+              <form id="login_form">
               <!-- start email -->
               <div class="email position-relative mb-3">
                 <i class="fa-solid fa-envelope position-absolute top-50 start-0 translate-middle-y ms-3"
                   style="z-index: 10;"></i>
                 <div class="form-floating">
-                  <input type="email" class="form-control ps-5 rounded-4" id="emailInput"
-                    placeholder="name@example.com">
+                  <input type="email" class="form-control ps-5 rounded-4" id="email"
+                    placeholder="name@example.com" onblur="validate_email()">
                   <label for="emailInput" class="ps-5">
                     Email address
                   </label>
                 </div>
-                <div id="emailerror" class="text-danger">
+                <div id="valid_email" class="invalid_input_feedback"></div>
 
-                </div>
               </div>
+
               <!-- end email -->
               <!-- start password -->
               <div class="password position-relative">
                 <i class="fa-solid fa-lock position-absolute top-50 start-0 translate-middle-y ms-3"
                   style="z-index: 10;"></i>
                 <span style="cursor: pointer;">
-                  <i class="fa-solid fa-eye-slash position-absolute top-50 end-0 translate-middle-y me-3 " id="eyepass"
+                  <i class="fa-solid fa-eye-slash position-absolute top-50 end-0 translate-middle-y me-3 "   id="eyepass"
+                  
                     style="z-index: 10;"></i>
                 </span>
                 <div class="form-floating">
-                  <input type="password" class="form-control ps-5 rounded-4 pe-5" id="floatingPassword"
-                    placeholder="Password">
+                  <input type="password" class="form-control ps-5 rounded-4 pe-5" id="password"
+                    placeholder="Password" onblur="validate_password()" >
                   <label for="floatingPassword" class="ps-5">Password</label>
                 </div>
-
-                <div class="text-danger" id="passworderror">
-
-                </div>
-
               </div>
+                <div id="valid_password" class="invalid_input_feedback"></div>
+
               <!-- end password -->
               <!-- start login,forgot -->
               <div class="forgot mt-3">
-                <button class="btn btn-info rounded-4 col-12 btn-primary " type="submit" id="loginBtn">
-                  <i class="fa-solid fa-right-from-bracket"></i> log in
+                <button class="btn btn-info rounded-4 col-12  btn-primary text-muted" type="button" id="loginBtn"  onclick="login()">
+                  <i class="fa-solid fa-right-from-bracket text-muted "></i> log in
                 </button>
               </div>
               <div class="d-flex justify-content-between align-items-center py-2">
@@ -162,7 +160,7 @@
               <!-- end or -->
               <!-- start face,google -->
               <div style="cursor: pointer;" class="continue d-grid gap-2 col-12 mx-auto">
-                <button class="btn rounded-4" type="button" id="googlebtn">
+                <button class="btn rounded-4 btn-primary" type="button" id="googlebtn">
                   <i class="icon fa-brands fa-google me-2"></i>
                   Continue with Google
                 </button>
