@@ -15,11 +15,20 @@
 .form-control::placeholder {
   color: #ffffff;
 }
-
+.email label {
+  color: var(--text-muted) !important;
+}
+.password label {
+  color: var(--text-muted) !important;
+}
+.name label {
+  color: var(--text-muted) !important;
+}
+.passwordcon label {
+  color: var(--text-muted) !important;
+}
 .image {
- 
   border: 1px solid;
-
 }
 .form {
   border: 1px solid;
@@ -47,7 +56,7 @@
   color: var(--text);
 }
 
-.input-box {
+/* .input-box {
   position: relative;
 
   margin-top: 15px;
@@ -84,6 +93,72 @@
   box-shadow: none;
   color: var(--text);
   cursor: pointer;
+} */
+.input-box {
+  position: relative;
+  margin-top: 20px; /* Slightly increased to give room for the floating label */
+}
+
+.input-box input {
+  padding: 12px 45px;
+  border: 1px solid #263e59;
+  border-radius: 12px;
+  background: var(--surface);
+  color: var(--text);
+}
+
+.input-box input:focus {
+  background: var(--surface);
+  color: var(--text);
+  border-color: var(--bs-primary);
+  box-shadow: none;
+  outline: none;
+}
+
+/* Default label position (centered like a placeholder) */
+.input-box label {
+  position: absolute;
+  left: 45px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text);
+  pointer-events: none; /* Allows clicks to pass through to the input */
+  transition: all 0.2s ease;
+  padding: 0 6px;
+  background: transparent;
+}
+
+/* Floating state: moves to top-left when focused OR when text is typed */
+.input-box input:focus ~ label,
+.input-box input:not(:placeholder-shown) ~ label {
+  top: 10px;
+  left: 30px;
+  font-size: 0.7rem;
+  color: var(--text);
+  border-radius: 4px;
+}
+
+.input-box > i:first-child {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text);
+  z-index: 2;
+}
+
+.input-box button {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  color: var(--text);
+  cursor: pointer;
+  z-index: 2;
 }
 .valid_input {
   border: 1px solid #198754 !important;
@@ -122,7 +197,7 @@
 .signup .form-control:-webkit-autofill:hover,
 .signup .form-control:-webkit-autofill:focus,
 .signup .form-control:-webkit-autofill:active {
--webkit-box-shadow: 0 0 0 1000px #0b1426 inset !important;
--webkit-text-fill-color: hsl(0, 0%, 100%) !important;
- transition: background-color 5000s ease-in-out 0s;
+  -webkit-box-shadow: 0 0 0 1000px #0b1426 inset !important;
+  -webkit-text-fill-color: hsl(0, 0%, 100%) !important;
+  transition: background-color 5000s ease-in-out 0s;
 }
