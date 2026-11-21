@@ -89,6 +89,7 @@
                 <h3>Login to Your Account</h3>
                 <p>Continue your culinary journey around the world</p>
               </div>
+              <form id="loginform">
               <!-- start email -->
               <div class="email position-relative mb-3">
                 <i class="fa-solid fa-envelope position-absolute top-50 start-0 translate-middle-y ms-3"
@@ -99,6 +100,9 @@
                   <label for="emailInput" class="ps-5">
                     Email address
                   </label>
+                </div>
+                <div id="emailerror" class="text-danger">
+
                 </div>
               </div>
               <!-- end email -->
@@ -115,11 +119,16 @@
                     placeholder="Password">
                   <label for="floatingPassword" class="ps-5">Password</label>
                 </div>
+
+                <div class="text-danger" id="passworderror">
+
+                </div>
+
               </div>
               <!-- end password -->
               <!-- start login,forgot -->
               <div class="forgot mt-3">
-                <button class="btn btn-info rounded-4 col-12 btn-primary " type="button">
+                <button class="btn btn-info rounded-4 col-12 btn-primary " type="submit" id="loginBtn">
                   <i class="fa-solid fa-right-from-bracket"></i> log in
                 </button>
               </div>
@@ -136,9 +145,9 @@
                     </label>
                   </div>
                 </div>
-
+</form>
                 <!-- Forgot Password -->
-                <a href="#" class="text-primary text-decoration-none mt-2">
+                <a href="./pass.html" class="text-primary text-decoration-none mt-2">
                   Forgot Password?
                 </a>
 
@@ -157,7 +166,7 @@
                   <i class="icon fa-brands fa-google me-2"></i>
                   Continue with Google
                 </button>
-             
+
               </div>
               <!-- end face,google -->
               <!-- start sign up -->
