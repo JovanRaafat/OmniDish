@@ -1,36 +1,34 @@
-.img_pizza{
-    background:
+.img_pizza {
+  background:
     linear-gradient(
       90deg,
       rgba(var(--overlay), 0.95) 0%,
       rgba(var(--overlay), 0.6) 50%,
       rgba(var(--overlay), 0) 100%
     ),
-    url(../images/WhatsApp\ Image\ 2026-10-28\ at\ 10.47.44\ PM.jpeg);
+    url(../images/details/bg-details.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height:55vh;
+  height: 55vh;
 }
-.img_1{
-border-radius: 15px !important;
+.img_1 {
+  border-radius: 15px !important;
 }
 
 .card-divider {
-    width: 100%;
-    height: 1px;
-    background: linear-gradient(to right, transparent, #dcd5cf70, transparent); 
-    background-color: #c29c8d59; 
-    margin: 15px 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #dcd5cf70, transparent);
+  background-color: #c29c8d59;
+  margin: 15px 0;
 }
-.Pizza_Image{
+.Pizza_Image {
   width: 250px;
-  height: 140 px; 
+  height: 140 px;
   flex-shrink: 0;
   cursor: pointer;
 }
-.Pizza_Image:hover img{
+.Pizza_Image:hover img {
   filter: brightness(0.7);
 }
-
-

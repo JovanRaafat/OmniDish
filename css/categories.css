@@ -1,7 +1,7 @@
 .banner-container {
   background-color: rgba(var(--overlay), 0.1);
   background-blend-mode: overlay;
-  background-image: url("../images/photo_2026-10-28_19-27-17.jpg");
+  background-image: url("../images/categories/bg-categories.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -11,14 +11,18 @@
 
 .card {
   cursor: pointer !important;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  transition:
+    transform 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out,
+    background-color 0.3s ease-in-out,
+    border-color 0.3s ease-in-out;
 }
 
 .card:hover {
   transform: translateY(-6px);
-  box-shadow: var(--shadow); 
+  box-shadow: var(--shadow);
 }
 input::placeholder {
   color: var(--text-muted) !important;
-  opacity: 1; 
+  opacity: 1;
 }

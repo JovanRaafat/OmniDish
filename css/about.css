@@ -1,59 +1,62 @@
 .hero {
-    height: 45vh;
-    background: linear-gradient(90deg,
-            rgba(var(--overlay), 0.95) 0%,
-            rgba(var(--overlay), 0.6) 50%,
-            rgba(var(--overlay), 0) 100%), 
-            url(../images/20969954497965720.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-left: 0px !important;
+  height: 45vh;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(var(--overlay), 0.95) 0%,
+      rgba(var(--overlay), 0.6) 50%,
+      rgba(var(--overlay), 0) 100%
+    ),
+    url(../images/about/bg-about.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: 0px !important;
 }
 
 .our-story p {
-    width: 80%;
+  width: 80%;
 }
 
 .logo {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
 }
 
 .cardss:hover {
-    border-color: var(--primary) !important;
-    transform: translateY(-3px);
+  border-color: var(--primary) !important;
+  transform: translateY(-3px);
 }
 
 .members:hover {
-    transform: translateY(-3px);
-    border-color: var(--primary) !important;
-    box-shadow: 0 12px 34px var(--primary-soft) !important;
+  transform: translateY(-3px);
+  border-color: var(--primary) !important;
+  box-shadow: 0 12px 34px var(--primary-soft) !important;
 }
 
 .members img {
-    width: 116px;
-    height: 116px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid var(--primary);
-    box-shadow: 0 0 0 5px var( --primary-soft);
+  width: 116px;
+  height: 116px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--primary);
+  box-shadow: 0 0 0 5px var(--primary-soft);
 }
 
 .social {
-    width: 38px;
-    height: 38px;
+  width: 38px;
+  height: 38px;
 }
 
 .social a {
-    color: var(--primary) !important;
+  color: var(--primary) !important;
 }
 
 .social:hover {
-    background-color: var(--shadow) !important;
+  background-color: var(--shadow) !important;
 }
 
 .text-light {
-    color: var(--text) !important;
+  color: var(--text) !important;
 }
