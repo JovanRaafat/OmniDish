@@ -96,14 +96,15 @@ button {
 .password .form-floating>label::after {
     background: transparent !important;
 }
-
-.img_card {
-    background:
-        linear-gradient(90deg,
-            rgba(var(--overlay), 0.95) 0%,
-            rgba(var(--overlay), 0.6) 50%,
-            rgba(var(--overlay), 0) 100%),
-        url(../images/image\ copy.png);
+    .img_card{
+        background:
+        linear-gradient(
+        90deg,
+        rgba(var(--overlay), 0.95) 0%,
+        rgba(var(--overlay), 0.6) 50%,
+        rgba(var(--overlay), 0) 100%
+        ),
+        url(../images/login/first-login.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
