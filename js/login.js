@@ -196,6 +196,7 @@ function login() {
   let valid_email = false;
   let valid_password = false;
 
+<<<<<<< Updated upstream
   if (email_rgx.test(email.value)) {
     email.classList.add("valid_input");
     email.classList.remove("invalid_input");
@@ -208,6 +209,14 @@ function login() {
       "Please enter a valid email address.";
     valid_email = false;
   }
+=======
+//remember me
+// const rememberMe =document.getElementById("rememberMe")
+// const savedEmail=localStorage.getItem("savedEmail")
+// if(savedEmail){
+//   emailInput.value =savedEmail;
+// }
+>>>>>>> Stashed changes
 
   if (password_rgx.test(password.value)) {
     password.classList.add("valid_input");
