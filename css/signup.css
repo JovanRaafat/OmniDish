@@ -8,21 +8,18 @@
     ),
     url("../images/signup2.jpeg");
   background-repeat: no-repeat;
-  background-position: 70%;
+  background-position: 50%;
   background-size: cover;
-  height: 70vh;
+  height: 60vh;
 }
 .form-control::placeholder {
   color: #ffffff;
 }
 
 .image {
-  background: url("../images/sign_up.jpeg");
-  background-repeat: no-repeat;
-  background-position: 8%;
-  background-size: cover;
+ 
   border: 1px solid;
-  height: 30vh;
+
 }
 .form {
   border: 1px solid;
@@ -115,4 +112,17 @@
 }
 .btn-primary:hover {
   color: var(--overlay) !important;
+}
+@media (max-width: 991.98px) {
+  .right {
+    display: contents;
+  }
+}
+.signup .form-control:-webkit-autofill,
+.signup .form-control:-webkit-autofill:hover,
+.signup .form-control:-webkit-autofill:focus,
+.signup .form-control:-webkit-autofill:active {
+-webkit-box-shadow: 0 0 0 1000px #0b1426 inset !important;
+-webkit-text-fill-color: hsl(0, 0%, 100%) !important;
+ transition: background-color 5000s ease-in-out 0s;
 }
