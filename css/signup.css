@@ -6,7 +6,7 @@
       rgba(var(--overlay), 0.6) 50%,
       rgba(var(--overlay), 0) 100%
     ),
-    url("../images/signup2.jpeg");
+    url("../images/signup/first-signup.jpeg");
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: cover;

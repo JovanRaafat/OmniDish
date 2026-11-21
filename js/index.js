@@ -5,36 +5,34 @@ const countriesData = [
   {
     name: "Egyptian",
     code: "EG",
-    image: "eygpt.jpeg",
+    image: "egypt-index.jpeg",
   },
   {
     name: "Italian",
     code: "IT",
-    image: "italy.jpeg",
+    image: "italy-index.jpeg",
   },
   {
     name: "Indian",
     code: "IN",
-    image: "india.jpeg",
+    image: "india-index.jpeg",
   },
   {
     name: "Mexican",
     code: "MX",
-    image: "mexico.jpeg",
+    image: "mexico-index.jpeg",
   },
   {
     name: "Japanese",
     code: "JP",
-    image: "japan.jpeg",
+    image: "japan-index.jpeg",
   },
   {
     name: "American",
     code: "US",
-    image: "usa.jpeg",
+    image: "usa-index.jpeg",
   },
 ];
-
-
 
 // Slider buttons
 function scrollCountries(direction) {
@@ -51,12 +49,8 @@ function scrollCountries(direction) {
   });
 }
 
-
-
-
 countriesSlider.innerHTML = countriesData
   .map(({ code, image, name }) => {
-
     return `
           <div class="card country-card p-0">
             <a
@@ -64,7 +58,7 @@ countriesSlider.innerHTML = countriesData
               href="./recipes.html?area=${name}"
             >
               <img
-                src="./images/${image}"
+                src="./images/index/${image}"
                 class="card-img-top"
                 alt="${name}"
               />

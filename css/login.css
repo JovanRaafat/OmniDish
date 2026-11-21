@@ -85,7 +85,7 @@ padding: 12px;
         rgba(var(--overlay), 0.6) 50%,
         rgba(var(--overlay), 0) 100%
         ),
-        url(../images/image\ copy.png);
+        url(../images/login/first-login.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
