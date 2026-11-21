@@ -1,14 +1,14 @@
 .home {
   background:
-    linear-gradient(90deg,
+    linear-gradient(40deg,
       rgba(var(--overlay), 0.95) 0%,
       rgba(var(--overlay), 0.6) 50%,
       rgba(var(--overlay), 0) 100%),
-    url("../images/home.jpeg");
+    url("../images/home3.jpeg");
   background-repeat: no-repeat;
-  background-position: 80%;
+  background-position: 50%;
   background-size: cover;
-  height: 80vh;
+  height: 70vh;
 }
 
 .form-control::placeholder {
