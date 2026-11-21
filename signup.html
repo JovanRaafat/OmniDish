@@ -104,49 +104,51 @@
               <form id="signup_form" class="col-12">
                 <!-- Full Name -->
                 <div>
-                  <div class="input-box">
+                  <div class="name input-box">
                     <i class="fa-solid fa-user"></i>
-                    <input type="text" class="col-12 form-control" onblur="validate_full_name()" placeholder="Full Name"
+                    <input type="text" class="col-12 form-control" onblur="validate_full_name()" placeholder=" "
                       id="full_name">
+                    <label for="full_name">Full Name</label>
                   </div>
-                  <div id="valid_full_name" class="invalid_input_feedback">
-                  </div>
+                  <div id="valid_full_name" class="invalid_input_feedback"></div>
                 </div>
 
                 <!-- Email Address -->
-                <div class="input-box">
+                <div class="email input-box">
                   <i class="fa-solid fa-envelope"></i>
-                  <input type="email" class="col-12 form-control" onblur="validate_email()" placeholder="Email Address"
-                    id="email">
+                  <input type="email" class="col-12 form-control" onblur="validate_email()" placeholder=" " id="email">
+                  <label for="email">Email Address</label>
                 </div>
-                <div id="valid_email" class="invalid_input_feedback">
-
-                </div>
+                <div id="valid_email" class="invalid_input_feedback"></div>
 
                 <!-- Password -->
-                <div class="input-box">
+                <div class="password input-box">
                   <i class="fa-solid fa-lock"></i>
-                  <input type="password" class="col-12 form-control" onblur="validate_password()" placeholder="Password"
+                  <input type="password" class="col-12 form-control" onblur="validate_password()" placeholder=" "
                     id="password">
-                  <button class="" type="button" onclick="TogglePassword('password', this)"><i
-                      class="fa-regular fa-eye eye-icon"></i></button>
+                  <label for="password">Password</label>
+                  <button type="button" onclick="TogglePassword('password', this)">
+                    <i class="fa-regular fa-eye eye-icon"></i>
+                  </button>
                 </div>
                 <div id="valid_password" class="invalid_input_feedback"></div>
 
                 <!-- Confirm Password -->
-                <div class="input-box">
+                <div class="passwordcon input-box">
                   <i class="fa-solid fa-lock"></i>
-                  <input type="password" class="col-12 form-control " onblur="validate_password_con ()"
-                    placeholder="Confirm Password" id="passwordcon">
-                  <button type="button" onclick="TogglePassword('passwordcon', this)"><i
-                      class="fa-regular fa-eye eye-icon"></i></button>
+                  <input type="password" class="col-12 form-control" onblur="validate_password_con()" placeholder=" "
+                    id="passwordcon">
+                  <label for="passwordcon">Confirm Password</label>
+                  <button type="button" onclick="TogglePassword('passwordcon', this)">
+                    <i class="fa-regular fa-eye eye-icon"></i>
+                  </button>
                 </div>
                 <div id="valid_passwordcon" class="invalid_input_feedback"></div>
 
-
-                <button type="button" class="btn mt-2 col-12 btn-sm rounded rounded-4 button-4 btn-primary p-2 "
-                  onclick="sign_up()" id="btn"> <i class="fa-solid fa-user me-2"></i> Create
-                  Account</button>
+                <button type="button" class="btn mt-3 col-12 btn-sm rounded rounded-4 button-4 btn-primary p-2"
+                  onclick="sign_up()" id="btn">
+                  <i class="fa-solid fa-user me-2"></i> Create Account
+                </button>
               </form>
 
 
@@ -177,7 +179,7 @@
       </div> -->
     </div>
   </div>
-  
+
 
 
 
