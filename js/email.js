@@ -1,0 +1,1 @@
+email = document.getElementById("floatingInput")
