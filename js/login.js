@@ -203,6 +203,21 @@ function login() {
   //   emailInput.value =savedEmail;
   // }
 
+
+  if (email_rgx.test(email.value)) {
+    email.classList.add("valid_input");
+    email.classList.remove("invalid_input");
+    document.getElementById("valid_email").innerHTML = "";
+    valid_email = true;
+  } else {
+    email.classList.add("invalid_input");
+    email.classList.remove("valid_input");
+    document.getElementById("valid_email").innerHTML =
+      "Please enter a valid email address.";
+    valid_email = false;
+  }
+
+
   if (password_rgx.test(password.value)) {
     password.classList.add("valid_input");
     password.classList.remove("invalid_input");
