@@ -12,8 +12,6 @@ async function getCountries() {
       "https://countries.dev/countries?fields=name,alpha2Code,capital,region,flag",
     );
     countries = await response.json();
-
-    console.log(countries);
     displayCountries(countries);
   } catch (error) {
     countriesMessage.innerHTML = `

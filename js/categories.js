@@ -47,11 +47,11 @@ function displayCategories(categories) {
       return `
         <div class="card rounded-5 col-10 col-sm-5 col-md-3 mt-4 text-center text-muted">
           <a class="text-decoration-none text-muted"
-              href="./recipes.html?category=${encodeURIComponent(name)}">
+              href="./recipes.html?category=${encodeURIComponent(name)}&icon=${icon}">
             <img src="${category.strCategoryThumb}" class="card-img-top rounded-5"
                   alt="${name} img" loading="lazy">
             <div class="card-body">
-              <i class="fa-solid ${icon} fs-4 text-muted text-opacity-75 mb-2"></i>
+              <i class="fa-solid ${icon} fs-4 text-muted text-opacity-75 mb-2 p-2"></i>
               <h5 class="card-title">${name}</h5>
             </div>
           </a>
@@ -64,20 +64,20 @@ console.log(categories);
 
 getCategories();
 
-  const categoriesInput = document.getElementById("categoriesSearch");
-  categoriesInput.addEventListener("input", function (e) {
-    search_items(e.target.value.trim().toLowerCase());
-  });
-  function search_items(searchValue) {
-    const filtered = [];
-    for (const i of categories) {
-      let categories_names = i.strCategory.toLowerCase().includes(searchValue);
-      if (categories_names) {
-        filtered.push(i);
-      }
+const categoriesInput = document.getElementById("categoriesSearch");
+categoriesInput.addEventListener("input", function (e) {
+  search_items(e.target.value.trim().toLowerCase());
+});
+function search_items(searchValue) {
+  const filtered = [];
+  for (const i of categories) {
+    let categories_names = i.strCategory.toLowerCase().includes(searchValue);
+    if (categories_names) {
+      filtered.push(i);
     }
-    displayCategories(filtered);
   }
-  categoriesInput.closest("form").addEventListener("submit", function (e) {
-    e.preventDefault();
-  });
+  displayCategories(filtered);
+}
+categoriesInput.closest("form").addEventListener("submit", function (e) {
+  e.preventDefault();
+});
