@@ -55,7 +55,7 @@ countriesSlider.innerHTML = countriesData
           <div class="card country-card p-0">
             <a
               class="text-decoration-none text-muted"
-              href="./recipes.html?country=${encodeURIComponent(name)}"
+              href="./recipes.html?country=${encodeURIComponent(name)}&code=${code}"
             >
               <img
                 src="./images/index/${image}"

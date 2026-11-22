@@ -43,7 +43,7 @@ function displayCountries(countries) {
         <div class="col-10 col-sm-5 col-md-4 col-lg-3">
           <a
             class="text-decoration-none"
-            href="./recipes.html?country=${encodeURIComponent(countryName)}"
+            href="./recipes.html?country=${encodeURIComponent(countryName)}&code=${country.alpha2Code}"
           >
             <div class="card country h-100 overflow-hidden">
 

@@ -1,180 +1,133 @@
-// Base URL for TheMealDB API
-const BASE = "https://www.themealdb.com/api/json/v1/1";
 
-const params = new URLSearchParams(window.location.search);
-const countryParam = params.get("country");
-
-// DOM elements
-const countryFlag = document.getElementById("countryFlag");
-const countryName = document.getElementById("countryName");
-const countryInfo = document.getElementById("countryInfo");
 const recipesHeading = document.getElementById("recipesHeading");
 const recipesMessage = document.getElementById("recipesMessage");
 const recipesContainer = document.getElementById("recipesContainer");
+const titleCountry = document.getElementById("title");
+const flag = document.querySelector(".Flag");
 
-async function getNationality(country) {
-  const res = await fetch(
-    `https://restcountries.com/v3.1/name/${country}`
-  );
 
-  const data = await res.json();
+// Get country name from URL or HTML
+function getCountryName() {
+  const params = new URLSearchParams(window.location.search);
+  const countryFromURL = params.get("country");
 
-  return data[0].demonyms.eng.m;
+  return countryFromURL;
+}
+function getCountryCode() {
+  const params = new URLSearchParams(window.location.search);
+  const code = params.get("code");
+
+  return code;
 }
 
-function showMessage(text, type = "danger") {
-  recipesMessage.innerHTML = `
-    <div class="alert alert-${type} mx-auto" style="max-width: 600px;">
-      ${text}
-    </div>`;
-}
 
+// Show loading
 function showLoading() {
-  recipesMessage.innerHTML = "";
+  recipesMessage.innerHTML = `
+    <div class="text-center py-5">
+      <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <p class="text-muted mt-3">Discovering delicious recipes...</p>
+    </div>
+  `;
 
-  recipesContainer.innerHTML = `
-    <div class="text-center text-muted py-5 w-100">
-      <div class="spinner-border text-primary" role="status"></div>
-    </div>`;
+  recipesContainer.innerHTML = "";
 }
 
-async function fetchJson(url) {
-  const response = await fetch(url);
+// Show message
+function showMessage(message, type = "warning") {
+  recipesMessage.innerHTML = `
+    <div class="alert alert-${type} text-center mx-auto">
+      ${message}
+    </div>
+  `;
 
-  if (!response.ok) {
-    throw new Error("Request failed");
-  }
-
-  return response.json();
+  recipesContainer.innerHTML = "";
 }
 
+// Create recipe card
+function createRecipeCard(meal) {
 
-async function loadCountry() {
-  countryName.textContent = countryParam;
-  document.title = `OmniDish | ${countryParam}`;
-  try {
-    const countries = await fetchJson("https://countries.dev/countries?fields=name,alpha2Code,capital,region,flag");
+  return `
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="card rounded-4 h-100 overflow-hidden">
 
-    const country = countries.find(
-      (c) => c.name.toLowerCase() === countryParam.toLowerCase()
-    );
+        <img
+          src="${meal.strMealThumb}"
+          class="card-img-top"
+          alt="${meal.strMeal}"
+          loading="lazy"
+        />
 
-    if (!country) return;
+        <div class="card-body d-flex flex-column text-muted">
 
-    // Display country flag
-    countryFlag.src = `https://flagcdn.com/${country.alpha2Code.toLowerCase()}.svg`;
-    countryFlag.alt = `${country.name} flag`;
+          <h5 class="card-title mb-3">
+            ${meal.strMeal}
+          </h5>
 
-    // Display country information
-    countryInfo.textContent =
-      `${country.capital || "No capital"} • ${country.region || "Unknown region"}`;
+          <div class="d-flex align-items-center mt-auto">
+            <a
+              href="details.html?id=${meal.idMeal}"
+              class="btn btn-primary rounded-pill"
+            >
+              View Recipe
+            </a>
 
-  } catch (error) {
-    console.error(error);
-  }
+            <i class="fa-solid fa-arrow-right ms-auto"></i>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  `;
 }
 
-/**
- * Load recipes related to the selected country
- */
-async function loadRecipes() {
-  showLoading();
-
-  // Get nationality from predefined object
-  const demonym = demonyms[countryParam];
-
-  if (!demonym) {
-    recipesContainer.innerHTML = "";
-    showMessage(
-      `No recipes available for ${countryParam} yet.`,
-      "warning"
-    );
-    return;
-  }
-
-  try {
-    // Fetch meals by nationality
-    const data = await fetchJson(
-      `${BASE}/filter.php?a=${encodeURIComponent(demonym)}`
-    );
-
-    if (!data.meals) {
-      recipesContainer.innerHTML = "";
-      showMessage(
-        `No recipes found for ${countryParam}.`,
-        "warning"
-      );
-      return;
-    }
-
-    recipesHeading.textContent =
-      `Popular ${demonym} Recipes`;
-
-    displayRecipes(data.meals);
-
-  } catch (error) {
-    console.error(error);
-
-    recipesContainer.innerHTML = "";
-
-    showMessage(
-      "Could not load recipes. Please try again."
-    );
-  }
-}
-
-/**
- * Render recipe cards
- */
+// Display recipes
 function displayRecipes(meals) {
   recipesMessage.innerHTML = "";
 
   recipesContainer.innerHTML = meals
-    .map(
-      (meal) => `
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="card rounded-4 h-100">
-
-          <!-- Recipe image -->
-          <img
-            src="${meal.strMealThumb}/medium"
-            class="card-img-top"
-            alt="${meal.strMeal}"
-            loading="lazy"
-          >
-
-          <div class="card-body text-muted">
-
-            <!-- Recipe title -->
-            <h5 class="card-title mb-3">
-              ${meal.strMeal}
-            </h5>
-
-            <!-- Recipe details button -->
-            <div class="d-flex align-items-center">
-              <a
-                href="details.html?id=${meal.idMeal}"
-                class="btn btn-primary rounded-5"
-              >
-                View Recipe
-              </a>
-
-              <i class="fa-solid fa-arrow-right ms-auto"></i>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    `
-    )
+    .map(createRecipeCard)
     .join("");
 }
 
-// Check if a country exists in the URL
-if (!countryParam) {
-  showMessage("No country selected.", "warning");
-} else {
-  // Load country details and recipes
-  loadCountry();
-  loadRecipes();
+const header = (countryName) => {
+  titleCountry.innerText = countryName;
+  flag.alt = countryName;
+  const code = getCountryCode()
+
+  flag.src = `https://flagsapi.com/${code}/shiny/32.png`;
 }
+// Main function
+async function loadRecipes() {
+  const countryName = getCountryName();
+
+  recipesHeading.textContent = `Popular ${countryName} Recipes`;
+  header(countryName);
+  showLoading();
+
+  try {
+
+    const response = await fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?a=${countryName}`);
+
+    const { meals } = await response.json();
+
+    if (!meals || meals.length === 0) {
+      showMessage(`No recipes found for ${countryName}.`);
+      return;
+    }
+
+    displayRecipes(meals);
+  } catch (error) {
+    console.error(error.message);
+
+    showMessage(
+      "Something went wrong. Please try again later.",
+      "danger"
+    );
+  }
+}
+
+// Start
+loadRecipes();
