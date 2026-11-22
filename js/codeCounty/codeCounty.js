@@ -1,4 +1,6 @@
 const COUNTRY_NAMES = {
+  GB: "United Kingdom",
+  VE: "Venezuela",
   AD: "Andorra",
   AF: "Afghanistan",
   AG: "Antigua and Barbuda",
@@ -57,8 +59,10 @@ const COUNTRY_NAMES = {
   TN: "Tunisia",
   TR: "Turkey",
   UA: "Ukraine",
+  US: "United States",
   UY: "Uruguay",
   VN: "Vietnam",
+
 };
 function getCode(name) {
   const entry = Object.entries(COUNTRY_NAMES).find(

@@ -80,6 +80,7 @@ function displayMealDetails(meal) {
                             rgba(var(--overlay), 0.6) 50%,
                             rgba(var(--overlay), 0) 100%),
                             url(${meal.strMealThumb})`
+  console.log(meal.strCountry);
 
   flag.innerHTML = `  <img class="flag" src="https://flagsapi.com/${getCode(meal.strCountry)}/shiny/32.png" alt="${meal.strArea}">`
 
