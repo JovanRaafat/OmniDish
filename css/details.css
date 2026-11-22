@@ -1,17 +1,10 @@
-.img_pizza {
-  background:
-    linear-gradient(
-      90deg,
-      rgba(var(--overlay), 0.95) 0%,
-      rgba(var(--overlay), 0.6) 50%,
-      rgba(var(--overlay), 0) 100%
-    ),
-    url(../images/details/bg-details.jpeg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+.bg-img {
+  background-repeat: no-repeat !important;
+  background-position: left !important;
+  background-size: cover !important;
   height: 55vh;
 }
+
 .img_1 {
   border-radius: 15px !important;
 }
@@ -23,30 +16,35 @@
   background-color: #c29c8d59;
   margin: 15px 0;
 }
-.Pizza_Image {
+
+.Image {
   width: 250px;
   height: 140 px;
   flex-shrink: 0;
   cursor: pointer;
 }
-.Pizza_Image:hover img {
+
+.Image:hover img {
   filter: brightness(0.7);
 }
-.content{
+
+.content {
   position: relative;
   top: 75px;
 }
-.italy{
-width: 50px; 
-height: 50px;
-border-radius: 15px; 
+
+.flag {
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
 }
-.btn2{
+
+.btn2 {
   width: 45px;
   height: 45px;
 }
 
-.number{
+.number {
   width: 32px;
   height: 32px;
   background-color: #aed4fb73;
