@@ -97,14 +97,13 @@ button {
 .password .form-floating>label::after {
     background: transparent !important;
 }
-    .img_card{
-        background:
-        linear-gradient(
-        90deg,
-        rgba(var(--overlay), 0.95) 0%,
-        rgba(var(--overlay), 0.6) 50%,
-        rgba(var(--overlay), 0) 100%
-        ),
+
+.img_card {
+    background:
+        linear-gradient(90deg,
+            rgba(var(--overlay), 0.95) 0%,
+            rgba(var(--overlay), 0.6) 50%,
+            rgba(var(--overlay), 0) 100%),
         url(../images/login/first-login.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -227,29 +226,35 @@ input::-ms-clear {
     display: block;
 }
 
-.valid_input{
-  border: 1px solid #198754 !important;
-  outline: none;
+.valid_input {
+    border: 1px solid #198754 !important;
+    outline: none;
 }
-.invalid_input{
-  border: 1px solid #dc3545 !important;
-  outline: none;
+
+.invalid_input {
+    border: 1px solid #dc3545 !important;
+    outline: none;
 }
-.invalid_input_feedback{
-width: 100%;
-font-size: 0.875em;
-color:#dc3545 ;
+
+.invalid_input_feedback {
+    width: 100%;
+    font-size: 0.875em;
+    color: #dc3545;
 }
+
 .btn-surface {
-  background-color: var(--surface) !important;
+    background-color: var(--surface) !important;
 }
+
 .btn-surface:hover {
-  background-color: var(--primary-hover) !important;
-  color: var(--text-on-primary);
+    background-color: var(--primary-hover) !important;
+    color: var(--text-on-primary);
 }
+
 .btn-primary {
-  transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
 }
+
 .btn-primary:hover {
-  color: var(--overlay) !important;
+    color: var(--overlay) !important;
 }
