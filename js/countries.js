@@ -248,7 +248,7 @@ function displayCountries(countries) {
               <div class="country-image-container h-50">
                 <img
                   src="${flagImage}"
-                  class="card-img-top country-image h-100 "
+                  class="card-img-top country-image"
                   alt="${country.flags || `${countryName} flag`}"
                   loading="lazy"
                 >
