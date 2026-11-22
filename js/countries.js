@@ -303,8 +303,12 @@ function search_items(searchValue) {
   }
   displayCountries(filtered);
   if (filtered.length === 0) {
-    countriesMessage.textContent =
-      "No countries found or No recipes for this country";
+    countriesMessage.innerHTML = `
+      <div class="alert alert-danger mx-auto" style="max-width: 600px;">
+        <i class="fa-solid fa-circle-exclamation me-2"></i>
+        No countries found or No recipes for this country
+      </div>
+    `;
   }
 }
 searchInput.closest("form").addEventListener("submit", function (e) {
