@@ -47,7 +47,7 @@ function displayCategories(categories) {
       return `
         <div class="card rounded-5 col-10 col-sm-5 col-md-3 mt-4 text-center text-muted">
           <a class="text-decoration-none text-muted"
-              href="">
+              href="./recipes.html?category=${encodeURIComponent(name)}&icon=${icon}">
             <img src="${category.strCategoryThumb}" class="card-img-top rounded-5"
                   alt="${name} img" loading="lazy">
             <div class="card-body">
