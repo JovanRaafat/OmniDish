@@ -1,12 +1,10 @@
 .hero {
   height: 45vh;
   background:
-    linear-gradient(
-      90deg,
+    linear-gradient(90deg,
       rgba(var(--overlay), 0.95) 0%,
       rgba(var(--overlay), 0.6) 50%,
-      rgba(var(--overlay), 0) 100%
-    ),
+      rgba(var(--overlay), 0) 100%),
     url(../images/about/bg-about.jpg);
   background-size: cover;
   background-position: center;
