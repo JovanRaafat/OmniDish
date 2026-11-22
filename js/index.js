@@ -18,7 +18,7 @@ const countriesData = [
     image: "india-index.jpeg",
   },
   {
-    name: "Mexican",
+    name: "Mexico",
     code: "MX",
     image: "mexico-index.jpeg",
   },
@@ -28,7 +28,7 @@ const countriesData = [
     image: "japan-index.jpeg",
   },
   {
-    name: "United States of America",
+    name: "United States",
     code: "US",
     image: "usa-index.jpeg",
   },
