@@ -38,114 +38,24 @@ if (googleBtn) {
   });
 }
 
-
-// //email
-// const emailInput =document.getElementById("emailInput");
-// const emailerror =document.getElementById("emailerror")
-
-// function validateEmail(email) {
-//     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-//     return emailRegex.test(email.trim());
-// }
-
-// emailInput.addEventListener("input", function () {
-//     const email = emailInput.value;
-//     const isValid = validateEmail(email);
-//     if (email.trim() === "") {
-//         emailInput.classList.add("is-invalid");
-//         emailerror.textContent = "Email is required";
-//     } 
-//     else if (!isValid) {
-//         emailInput.classList.add("is-invalid");
-//         emailerror.textContent = "Please enter a valid email address.";
-//     } 
-//     else {
-//         emailInput.classList.remove("is-invalid");
-//         emailerror.textContent = "";
-//     }
-// });
-
-// //password
-// const password =document.getElementById("floatingPassword")
-// const passworderror =document.getElementById("passworderror")
-
-// function validatePassword(password) {
-//     const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
-//     return passwordRegex.test(password);
-// }
-
-// password.addEventListener("input", function () {
-//     const passwordValue = password.value;
-//     const isValid = validatePassword(passwordValue);
-//     if(passwordValue.trim()===""){
-//         password.classList.add("is-invalid");
-//         password.classList.remove("is-valid");
-//         passworderror.textContent = "password is required";
-
-//     }
-//     else if (isValid) {
-//         password.classList.remove("is-invalid");
-//         password.classList.add("is-valid");
-//         passworderror.textContent = "";
-//     } else {
-//         password.classList.remove("is-valid");
-//         password.classList.add("is-invalid");
-//         passworderror.textContent =
-//             "Use 8+ chars: A–Z, a–z, 0–9, and @$!%*?&.";
-//     }
-// });
-
 // //eyepass
-const eyepass = document.getElementById("eyepass")
+const eyepass = document.getElementById("eyepass");
 eyepass.addEventListener("click", function () {
   if (password.type === "password") {
-    password.type = "text"
+    password.type = "text";
     eyepass.classList.remove("fa-eye-slash");
     eyepass.classList.add("fa-eye");
   } else {
-    password.type = "password"
+    password.type = "password";
     eyepass.classList.remove("fa-eye");
     eyepass.classList.add("fa-eye-slash");
   }
-})
-
-
-// //login
-// const loginform =document.getElementById("loginform")
-// loginform.addEventListener("submit",function(e){
-//   e.preventDefault();
-//   console.log("hello");
-
-//     const email = emailInput.value;
-//     const passwordValue = password.value;
-
-//     const isemailvalid = validateEmail(email);
-//     const ispasswordvalid = validatePassword(passwordValue)
-
-// if (!isemailvalid) {
-//     emailInput.classList.add("is-invalid");
-//     emailerror.textContent = "Please enter a valid email address.";
-// }
-
-// if (!ispasswordvalid) {
-//     password.classList.add("is-invalid");
-//     password.classList.remove("is-valid");
-//     passworderror.textContent = "Please enter a valid password.";
-// }
-
-//     if(!isemailvalid || !ispasswordvalid ){
-//       return;
-//     }
-
-//     window.location.href ="index.html"
-// })
+});
 
 window.validate_email = validate_email;
 window.validate_password = validate_password;
 window.login = login;
 window.TogglePassword = TogglePassword;
-
-
 
 function validate_email() {
   let email = document.getElementById("email");
@@ -186,7 +96,6 @@ function validate_password() {
   }
 }
 
-
 function login() {
   let email = document.getElementById("email");
   let password = document.getElementById("password");
@@ -195,13 +104,6 @@ function login() {
   let email_rgx = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
   let valid_email = false;
   let valid_password = false;
-
-  //remember me
-  // const rememberMe =document.getElementById("rememberMe")
-  // const savedEmail=localStorage.getItem("savedEmail")
-  // if(savedEmail){
-  //   emailInput.value =savedEmail;
-  // }
 
   if (password_rgx.test(password.value)) {
     password.classList.add("valid_input");
