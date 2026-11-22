@@ -2,8 +2,6 @@
 const recipesHeading = document.getElementById("recipesHeading");
 const recipesMessage = document.getElementById("recipesMessage");
 const recipesContainer = document.getElementById("recipesContainer");
-const titleCountry = document.getElementById("title");
-const flag = document.querySelector("#icon");
 
 function getCountryIcon() {
   const params = new URLSearchParams(window.location.search);
@@ -90,9 +88,17 @@ function displayRecipes(meals) {
 }
 
 const header = (categoryName) => {
+  const titleCountry = document.getElementById("title");
+  const flag = document.querySelector("#icon");
+  const link = document.querySelector("#backLink");
+  const text = document.querySelector("#back");
+
+
   titleCountry.innerText = categoryName;
   const icon = getCountryIcon()
   flag.innerHTML = `<i class="fa-solid ${icon} fs-4 text-muted text-opacity-75 mb-2"></i>`
+  text.innerHTML = "Back to Categories";
+  link.href = "categories.html";
 }
 // Main Function
 async function loadCategoryRecipes(categoryName) {
