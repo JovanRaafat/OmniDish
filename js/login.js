@@ -96,16 +96,16 @@ if (googleBtn) {
 // });
 
 // //eyepass
-const eyepass =document.getElementById("eyepass")
+const eyepass = document.getElementById("eyepass")
 eyepass.addEventListener("click", function () {
-  if(password.type === "password"){
-    password.type ="text"
-eyepass.classList.remove("fa-eye-slash");
-eyepass.classList.add("fa-eye");
-  }else{
-    password.type ="password"
-eyepass.classList.remove("fa-eye");
-eyepass.classList.add("fa-eye-slash");
+  if (password.type === "password") {
+    password.type = "text"
+    eyepass.classList.remove("fa-eye-slash");
+    eyepass.classList.add("fa-eye");
+  } else {
+    password.type = "password"
+    eyepass.classList.remove("fa-eye");
+    eyepass.classList.add("fa-eye-slash");
   }
 })
 
@@ -115,7 +115,7 @@ eyepass.classList.add("fa-eye-slash");
 // loginform.addEventListener("submit",function(e){
 //   e.preventDefault();
 //   console.log("hello");
-  
+
 //     const email = emailInput.value;
 //     const passwordValue = password.value;
 
@@ -142,7 +142,7 @@ eyepass.classList.add("fa-eye-slash");
 
 window.validate_email = validate_email;
 window.validate_password = validate_password;
-window.login =login;
+window.login = login;
 window.TogglePassword = TogglePassword;
 
 
@@ -196,27 +196,12 @@ function login() {
   let valid_email = false;
   let valid_password = false;
 
-<<<<<<< Updated upstream
-  if (email_rgx.test(email.value)) {
-    email.classList.add("valid_input");
-    email.classList.remove("invalid_input");
-    document.getElementById("valid_email").innerHTML = "";
-    valid_email = true;
-  } else {
-    email.classList.add("invalid_input");
-    email.classList.remove("valid_input");
-    document.getElementById("valid_email").innerHTML =
-      "Please enter a valid email address.";
-    valid_email = false;
-  }
-=======
-//remember me
-// const rememberMe =document.getElementById("rememberMe")
-// const savedEmail=localStorage.getItem("savedEmail")
-// if(savedEmail){
-//   emailInput.value =savedEmail;
-// }
->>>>>>> Stashed changes
+  //remember me
+  // const rememberMe =document.getElementById("rememberMe")
+  // const savedEmail=localStorage.getItem("savedEmail")
+  // if(savedEmail){
+  //   emailInput.value =savedEmail;
+  // }
 
   if (password_rgx.test(password.value)) {
     password.classList.add("valid_input");
