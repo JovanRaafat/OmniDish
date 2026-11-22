@@ -25,7 +25,7 @@
 }
 .Pizza_Image {
   width: 250px;
-  height: 140 px;
+  height: 140px;
   flex-shrink: 0;
   cursor: pointer;
 }
