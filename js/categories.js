@@ -1,4 +1,5 @@
 const categoriesContainer = document.getElementById("categoriesContainer");
+const categoriesMsg = document.getElementById("categoriesMsg")
 let categories = [];
 const categoryIcons = {
   Beef: "fa-cow",
@@ -24,7 +25,9 @@ async function getCategories() {
     </div>`;
 
   try {
-    const response = await fetch("https://www.themealdb.com/api/json/v1/1/categories.php");
+    const response = await fetch(
+      "https://www.themealdb.com/api/json/v1/1/categories.php",
+    );
     if (!response.ok) throw new Error("Request failed");
     const data = await response.json();
     categories = data.categories;
@@ -60,6 +63,7 @@ function displayCategories(categories) {
     .join("");
 }
 
+
 console.log(categories);
 
 getCategories();
@@ -77,7 +81,22 @@ function search_items(searchValue) {
     }
   }
   displayCategories(filtered);
+  if (filtered.length === 0) {
+    categoriesMsg.innerHTML = `
+    <div class="alert alert-danger mx-auto" style="max-width: 600px;">
+    <i class="fa-solid fa-circle-exclamation me-2"></i>
+    No Categories found
+    </div>
+    `;
+  }
+  else{
+    categoriesMsg.innerHTML= "";
+  }
 }
-categoriesInput.closest("form").addEventListener("submit", function (e) {
-  e.preventDefault();
-});
+
+const searchForm = categoriesInput.closest("form");
+if (searchForm) {
+  searchForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+  });
+}
