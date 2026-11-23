@@ -1,14 +1,13 @@
 .bg-img {
   background:
-    linear-gradient(
-      90deg,
+    linear-gradient(90deg,
       rgba(var(--overlay), 0.95) 0%,
       rgba(var(--overlay), 0.6) 50%,
-      rgba(var(--overlay), 0) 100%
-    ),
+      rgba(var(--overlay), 0) 100%),
     url("../images/contact/bg-contact.png");
   background-size: cover;
-  height: 70vh;
+  background-position: center;
+  min-height: 70vh;
 }
 
 form {
