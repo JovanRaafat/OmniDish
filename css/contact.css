@@ -3,7 +3,7 @@
     linear-gradient(90deg,
       rgba(var(--overlay), 0.95) 0%,
       rgba(var(--overlay), 0.6) 50%,
-      rgba(var(--overlay), 0) 100%),
+      rgba(var(--overlay), 0.4) 100%),
     url("../images/contact/bg-contact.png");
   background-size: cover;
   height: 70vh;
@@ -61,11 +61,12 @@ textarea::placeholder {
   border-color: #dc3545 !important;
   box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.15) !important;
 }
+
 .signup .form-control:-webkit-autofill,
 .signup .form-control:-webkit-autofill:hover,
 .signup .form-control:-webkit-autofill:focus,
 .signup .form-control:-webkit-autofill:active {
--webkit-box-shadow: 0 0 0 1000px #12203a inset !important;
--webkit-text-fill-color: #ffffff !important;
- transition: background-color 5000s ease-in-out 0s;
+  -webkit-box-shadow: 0 0 0 1000px #12203a inset !important;
+  -webkit-text-fill-color: #ffffff !important;
+  transition: background-color 5000s ease-in-out 0s;
 }
