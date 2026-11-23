@@ -96,20 +96,26 @@ function displayallMeals(meals) {
 
 async function main() {
   allMeals = await getAllMeals();
-  console.log(allMeals);
-
   searchInput.addEventListener("input", function (e) {
-    search_items(e.target.value.trim().toLowerCase());
+    const value = e.target.value.trim().toLowerCase();
+    if (!value) {
+      recipes.innerHTML = '';
+      return;
+    }
+    search_items(value);
   });
+
   function search_items(searchValue) {
     let filtered = [];
 
     filtered = allMeals.filter((meal) => meal.strMeal.toLowerCase().includes(searchValue))
     if (filtered.length === 0) {
       recipes.innerHTML = `
+      <div>
       <div class="alert alert-danger mx-auto" style="max-width: 600px;">
         <i class="fa-solid fa-circle-exclamation me-2"></i>
         No countries found or No recipes for this country
+      </div>
       </div>
     `;
       return;
