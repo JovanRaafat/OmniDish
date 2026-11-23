@@ -1,11 +1,11 @@
 .hero {
-  height: 45vh;
+  height: 70vh;
   background:
     linear-gradient(90deg,
-      rgba(var(--overlay), 0.95) 0%,
-      rgba(var(--overlay), 0.6) 50%,
+      rgba(var(--overlay), 0.4) 0%,
+      rgba(var(--overlay), 0.2) 50%,
       rgba(var(--overlay), 0) 100%),
-    url(../images/about/bg-about.jpg);
+    url(../images/about/Team22.jpeg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
