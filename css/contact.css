@@ -71,3 +71,19 @@ textarea::placeholder {
   -webkit-text-fill-color: #ffffff !important;
   transition: background-color 5000s ease-in-out 0s;
 }
+/* Smooth color transition for form field icons */
+#contactForm .position-relative .icon {
+  transition: color 0.2s ease;
+}
+
+/* Valid state */
+#contactForm .position-relative:has(.is-valid) .icon,
+#contactForm .position-relative:has(.valid_input) .icon {
+  color: #198754 !important;
+}
+
+/* Invalid state */
+#contactForm .position-relative:has(.is-invalid) .icon,
+#contactForm .position-relative:has(.invalid_input) .icon {
+  color: #dc3545 !important;
+}

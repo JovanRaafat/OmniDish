@@ -19,13 +19,13 @@
     color: var(--text-muted);
 }
 
-.email i {
+/* .email i {
     color: var(--primary) !important;
-}
+} */
 
-.password i {
+/* .password i {
     color: var(--primary) !important;
-}
+} */
 
 .email label {
     color: var(--text-muted) !important;
@@ -72,10 +72,9 @@ button {
     color: var(--text) !important;
 
 }
-
+/* 
 .icon {
-    /* color: var(--primary) !important; */
-}
+    color: var(--primary) !important;} */
 
 .signup p {
     color: var(--text-muted) !important;
@@ -252,4 +251,21 @@ color:#dc3545 ;
 }
 .btn-primary:hover {
   color: var(--overlay) !important;
+}
+/* Smooth color transition for input and eye icons */
+.email i,
+.password i {
+  transition: color 0.2s ease;
+}
+
+/* Valid state */
+.email:has(input.valid_input) i,
+.password:has(input.valid_input) i {
+  color: #198754 !important;
+}
+
+/* Invalid state */
+.email:has(input.invalid_input) i,
+.password:has(input.invalid_input) i {
+  color: #dc3545 !important;
 }
