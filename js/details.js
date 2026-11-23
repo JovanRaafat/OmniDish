@@ -27,7 +27,7 @@ const mealTime = document.getElementById("mealTime");
 const mealDifficulty = document.getElementById("mealDifficulty");
 
 const ingredientsList1 = document.getElementById("ingredientsList1");
-const ingredientsList2 = document.getElementById("ingredientsList2");
+// const ingredientsList2 = document.getElementById("ingredientsList2");
 const instructionsList = document.getElementById("instructionsList");
 const videoLink = document.getElementById("videoLink");
 
@@ -122,18 +122,18 @@ function displayIngredients(meal) {
     }
   }
 
-  const middle = Math.ceil(ingredients.length / 2);
+  // const middle = Math.ceil(ingredients.length / 2);
 
-  const firstColumn = ingredients.slice(0, middle);
-  const secondColumn = ingredients.slice(middle);
+  const firstColumn = ingredients.slice(0, ingredients.length);
+  // const secondColumn = ingredients.slice(middle);
 
   ingredientsList1.innerHTML = firstColumn
-    .map((item) => `<li class="py-1">${item}</li>`)
+    .map((item) => `<li class="py-1 col-12 col-md-5 ">${item}</li>`)
     .join("");
 
-  ingredientsList2.innerHTML = secondColumn
-    .map((item) => `<li class="py-1">${item}</li>`)
-    .join("");
+  // ingredientsList2.innerHTML = secondColumn
+    // .map((item) => `<li class="py-1">${item}</li>`)
+    // .join("");
 }
 
 // ================================
