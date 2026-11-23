@@ -84,7 +84,7 @@ function search_items(searchValue) {
   displayCategories(filtered);
   if (filtered.length === 0) {
     categoriesMsg.innerHTML = `
-    <div class="alert alert-danger mx-auto" style="max-width: 600px;">
+    <div class="alert alert-warning mx-auto" style="max-width: 600px;">
     <i class="fa-solid fa-circle-exclamation me-2"></i>
     No Categories found
     </div>
@@ -100,4 +100,3 @@ if (searchForm) {
     e.preventDefault();
   });
 }
-

@@ -302,14 +302,14 @@ function search_items(searchValue) {
     }
   }
   displayCountries(filtered);
-  // if (filtered.length === 0) {
-  //   countriesMessage.innerHTML = `
-  //     <div class="alert alert-danger mx-auto" style="max-width: 600px;">
-  //       <i class="fa-solid fa-circle-exclamation me-2"></i>
-  //       No countries found or No recipes for this country
-  //     </div>
-  //   `;
-  // }
+  if (filtered.length === 0) {
+    countriesMessage.innerHTML = `
+      <div class="alert alert-warning mx-auto" style="max-width: 600px;">
+        <i class="fa-solid fa-circle-exclamation me-2"></i>
+        No countries found
+      </div>
+    `;
+  }
 }
 searchInput.closest("form").addEventListener("submit", function (e) {
   e.preventDefault();
