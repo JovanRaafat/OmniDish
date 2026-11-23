@@ -1,5 +1,5 @@
 const categoriesContainer = document.getElementById("categoriesContainer");
-const categoriesMsg = document.getElementById("categoriesMsg")
+const categoriesMsg = document.getElementById("categoriesMsg");
 let categories = [];
 const categoryIcons = {
   Beef: "fa-cow",
@@ -65,7 +65,6 @@ function displayCategories(categories) {
     .join("");
 }
 
-
 console.log(categories);
 
 getCategories();
@@ -90,9 +89,8 @@ function search_items(searchValue) {
     No Categories found
     </div>
     `;
-  }
-  else{
-    categoriesMsg.innerHTML= "";
+  } else {
+    categoriesMsg.innerHTML = "";
   }
 }
 
@@ -102,3 +100,4 @@ if (searchForm) {
     e.preventDefault();
   });
 }
+

@@ -1,4 +1,4 @@
-import getCode from './codeCounty/codeCounty.js';
+import getCode from "./codeCounty/codeCounty.js";
 
 const categoryIcons = {
   Beef: "fa-cow",
@@ -79,10 +79,9 @@ function displayMealDetails(meal) {
                             rgba(var(--overlay), 0.95) 0%,
                             rgba(var(--overlay), 0.6) 50%,
                             rgba(var(--overlay), 0) 100%),
-                            url(${meal.strMealThumb})`
-  console.log(meal.strCountry);
+                            url(${meal.strMealThumb})`;
 
-  flag.innerHTML = `  <img class="flag" src="https://flagsapi.com/${getCode(meal.strCountry)}/shiny/32.png" alt="${meal.strArea}">`
+  flag.innerHTML = `  <img class="flag" src="https://flagsapi.com/${getCode(meal.strCountry)}/shiny/32.png" alt="${meal.strArea}">`;
 
   // Category
   mealCategory.innerHTML = `
@@ -190,7 +189,7 @@ function displayVideo(meal) {
                   </div>
                 </div>
                 <div>
-                  <a href="$https://youtu.be/hfh9hsJkUYc"
+                  <a href="${meal.strYoutube}"
                     class="btn2 btn btn-outline-secondary rounded-3  border-secondary d-flex align-items-center justify-content-center">
                     <i class="fa-solid fa-arrow-right"></i>
                   </a>
