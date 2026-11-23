@@ -134,6 +134,9 @@ body {
 
 
 
+input:focus {
+    box-shadow: none !important;
+}
 
 /* nav */
 

@@ -3,32 +3,32 @@ const prevCountry = document.getElementById("prevCountry");
 const nextCountry = document.getElementById("nextCountry");
 const countriesData = [
   {
-    name: "Egyptian",
+    name: "Egypt",
     code: "EG",
     image: "egypt-index.jpeg",
   },
   {
-    name: "Italian",
+    name: "Italy",
     code: "IT",
     image: "italy-index.jpeg",
   },
   {
-    name: "Indian",
+    name: "India",
     code: "IN",
     image: "india-index.jpeg",
   },
   {
-    name: "Mexican",
+    name: "Mexico",
     code: "MX",
     image: "mexico-index.jpeg",
   },
   {
-    name: "Japanese",
+    name: "Japan",
     code: "JP",
     image: "japan-index.jpeg",
   },
   {
-    name: "American",
+    name: "United States",
     code: "US",
     image: "usa-index.jpeg",
   },
@@ -55,7 +55,7 @@ countriesSlider.innerHTML = countriesData
           <div class="card country-card p-0">
             <a
               class="text-decoration-none text-muted"
-              href="./recipes.html?area=${name}"
+              href="./recipes.html?country=${encodeURIComponent(name)}&code=${code}"
             >
               <img
                 src="./images/index/${image}"

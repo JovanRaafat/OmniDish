@@ -50,7 +50,7 @@
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle fw-bold fs-5 text-muted text-primary-hover" href="#" role="button"
                   data-bs-toggle="dropdown" aria-expanded="false">
-                  pages
+                  Pages
                 </a>
                 <ul class="dropdown-menu bg-surface border rounded-3 ps-2 mb-2">
                   <li>
@@ -76,108 +76,32 @@
   </nav>
   <!-- nav -->
   <!-- Start Header -->
-  <header class="Italy-Header d-flex align-items-center px-5">
+  <header class="Header d-flex align-items-center px-5">
     <div>
       <div class="d-flex align-items-center pt-5 pb-2 hero">
-        <a href="countries.html" class="text-decoration-none text-reset">
-          <p class="Back fw-bold"> <i class="fa-solid fa-arrow-left me-1 fs-5"></i><span class="fs-5">
+        <a href="countries.html" class="text-decoration-none text-reset" id="backLink">
+          <p class="Back fw-bold"> <i class="fa-solid fa-arrow-left me-1 fs-5"></i><span class="fs-5" id="back">
               Back to Countries</span></p>
         </a>
       </div>
-      <div class="d-flex Italy">
-        <img src="images/recipes/italy-recipes.jpg" alt="Italy" class="ItalyFlag border-none rounded-3 me-3">
+      <div class="d-flex ">
+        <div id="icon" class="p-2 ">
+        </div>
         <div class="">
-          <h2 class="mb-1">Italy</h2>
-          <p class="fs-5">La doice vita, on your plate</p>
+          <h2 class="mb-1" id="title"></h2>
         </div>
       </div>
     </div>
   </header>
   <!-- End Header -->
   <!-- Start Popular Recipes -->
-  <section class="Italy-Main">
+  <section class="Main">
     <div class="container my-4 d-flex flex-column justify-content-center w-75">
       <div class="my-3">
-        <h3 class="fs-2"> <i class="fa-solid fa-utensils me-2"></i>Popular Italian Recipes</h3>
+        <h3 class="fs-2"><i class="fa-solid fa-utensils me-2"></i><span id="recipesHeading">Popular Recipes</span></h3>
       </div>
-      <div class="row justify-content-center g-4 mb-3">
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card rounded rounded-4 h-100 ">
-            <img src="images/recipes/pizza-recipes.jpg" class="card-img-top" alt="Pizza">
-            <div class="card-body text-muted">
-              <h5 class="card-title mb-3">Pizza</h5>
-              <div class="d-flex align-items-center">
-                <a href="details.html" class="btn btn-primary rounded rounded-5 ">Main Course</a>
-                <i class="fa-solid fa-arrow-right ms-auto"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card rounded rounded-4 h-100 ">
-            <img src="images/recipes/pasta-recipes.jpg" class="card-img-top" alt="Pasta">
-            <div class="card-body text-muted">
-              <h5 class="card-title mb-3">Pasta</h5>
-              <div class="d-flex align-items-center">
-                <a href="details.html" class="btn btn-primary rounded rounded-5 ">Main Course</a>
-                <i class="fa-solid fa-arrow-right ms-auto"></i>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card rounded rounded-4 h-100 ">
-            <img src="images/recipes/lasagne-recipes.jpg" class="card-img-top" alt="Lasagne">
-            <div class="card-body text-muted">
-              <h5 class="card-title mb-3">Lasagne</h5>
-              <div class="d-flex align-items-center">
-                <a href="details.html" class="btn btn-primary rounded rounded-5 ">Main Course</a>
-                <i class="fa-solid fa-arrow-right ms-auto"></i>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card rounded rounded-4 h-100 ">
-            <img src="images/recipes/tiramisu-recipes.jpg" class="card-img-top" alt="tiramisu">
-            <div class="card-body text-muted">
-              <h5 class="card-title mb-3">Tiramisu</h5>
-              <div class="d-flex align-items-center">
-                <a href="details.html" class="btn btn-primary rounded rounded-5 ">Main Course</a>
-                <i class="fa-solid fa-arrow-right ms-auto"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card rounded rounded-4 h-100 ">
-            <img src="images/recipes/salad-recipes.jpg" class="card-img-top" alt="Salad">
-            <div class="card-body text-muted">
-              <h5 class="card-title mb-3">Caprese Salad</h5>
-              <div class="d-flex align-items-center">
-                <a href="details.html" class="btn btn-primary rounded rounded-5 ">Main Course</a>
-                <i class="fa-solid fa-arrow-right ms-auto"></i>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card rounded rounded-4 h-100 ">
-            <img src="images/recipes/risotto-recipes.jpg" class="card-img-top" alt="risotto">
-            <div class="card-body text-muted">
-              <h5 class="card-title mb-3">Risotto</h5>
-              <div class="d-flex align-items-center">
-                <a href="details.html" class="btn btn-primary rounded rounded-5 ">Main Course</a>
-                <i class="fa-solid fa-arrow-right ms-auto"></i>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
+      <div id="recipesMessage"></div>
+      <div class="row justify-content-center g-4 mb-3" id="recipesContainer"></div>
     </div>
   </section>
   <!-- End Popular Recipes -->
@@ -235,7 +159,7 @@
   <!-- footer -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/theme.js"></script>
-
+  <script type="module" src="js/recipes.js"></script>
 </body>
 
 </html>

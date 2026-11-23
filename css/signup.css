@@ -197,7 +197,7 @@
 .signup .form-control:-webkit-autofill:hover,
 .signup .form-control:-webkit-autofill:focus,
 .signup .form-control:-webkit-autofill:active {
-  -webkit-box-shadow: 0 0 0 1000px #0b1426 inset !important;
+  -webkit-box-shadow: 0 0 0 1000px #12203a inset !important;
   -webkit-text-fill-color: hsl(0, 0%, 100%) !important;
   transition: background-color 5000s ease-in-out 0s;
 }

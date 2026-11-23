@@ -52,7 +52,7 @@
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle fw-bold fs-5 text-muted text-primary-hover" href="#"
                                     role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    pages
+                                    Pages
                                 </a>
                                 <ul class="dropdown-menu bg-surface border rounded-3 ps-2 mb-2">
                                     <li>
@@ -94,18 +94,21 @@
                     </div>
                 </div>
 
-                <form class="email-form col-10">
+                <form class="email-form col-10 " id="resetForm" novalidate>
                     <div class="email position-relative col-12 mb-3 mx-auto">
                         <i class="fa-solid fa-envelope position-absolute top-50 start-0 translate-middle-y ms-3"
                             style="z-index: 10;"></i>
                         <div class="form-floating">
-                            <input type="email" class="form-control rounded-4 ps-5" id="floatingInput" name="email"
-                                placeholder="name@example.com" required>
-                            <label for="floatingInput" class="ps-5">Email address</label>
+                            <input type="email" class="form-control rounded-4 ps-5" id="emailInput" name="email"
+                                placeholder="name@example.com">
+                            <label for="emailInput" class="ps-5">Email address</label>
                         </div>
                     </div>
-                    <a href="email.html" class ="text-reset text-decoration-none btn btn-primary col-12 mx-auto rounded-4" type="submit">Send reset
-                        link</a>
+                    <p id="emailError" class="text-danger small col-10 mb-3 d-none"></p>
+
+                    <button type="submit" class="btn btn-primary col-12 mx-auto rounded-4">Send reset
+                        link</button>
+
                 </form>
                 <div class="d-flex justify-content-center mt-3"><a href="login.html" class="text-reset">
                         <h6 class="text-primary"><i class="fa-solid fa-arrow-left-long me-2"></i>Back to login</h6>
@@ -172,8 +175,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/theme.js"></script>
     <script src="js/email.js"></script>
+    <script src="js/pass.js"></script>
 
-    
+
 </body>
 
 

@@ -18,6 +18,19 @@ input:focus {
   box-shadow: none !important;
 }
 
+.min-vh {
+  min-height: 37vh;
+}
+
 .card:hover {
   transform: translateY(-4px);
+}
+
+.signup .form-control:-webkit-autofill,
+.signup .form-control:-webkit-autofill:hover,
+.signup .form-control:-webkit-autofill:focus,
+.signup .form-control:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 1000px #12203a inset !important;
+  -webkit-text-fill-color: #ffffff !important;
+  transition: background-color 5000s ease-in-out 0s;
 }
