@@ -201,3 +201,22 @@
   -webkit-text-fill-color: hsl(0, 0%, 100%) !important;
   transition: background-color 5000s ease-in-out 0s;
 }
+/* Smooth color transition for input and eye icons */
+.input-box > i:first-child,
+.input-box button {
+  transition: color 0.2s ease;
+}
+
+/* Valid state */
+.input-box:has(input.valid_input) > i:first-child,
+.input-box:has(input.valid_input) button,
+.input-box:has(input.valid_input) .eye-icon {
+  color: #198754;
+}
+
+/* Invalid state */
+.input-box:has(input.invalid_input) > i:first-child,
+.input-box:has(input.invalid_input) button,
+.input-box:has(input.invalid_input) .eye-icon {
+  color: #dc3545;
+}
