@@ -78,144 +78,149 @@
 
 
   <!-- main -->
-   <div class="signup">
-  <main class="main">
-    <div class="bg-img d-flex  align-items-center px-md-5 text-main">
-      <div class="col-12 col-md-4 mx-md-5">
-        <h2 class="h1 fw-bold">Get in Touch</h2>
-        <p>Have a question, suggestion, or recipe to share?
-          We'd love to hear from you.</p>
-      </div>
-    </div>
-    <!-- contact -->
-    <section class="d-flex p-md-5 p-1 gap-5 flex-lg-row flex-column justify-content-center align-content-center">
-      <!-- form -->
-      <form id="contactForm"
-        class="row g-3 container col-lg-6 col-12 m-auto border rounded-4 p-3 bg-surface shadow my-0">
-        <div class="d-flex gap-4 align-items-center ">
-          <i class="fa-solid fa-paper-plane fs-1 text-primary"></i>
-          <div class="flex-column d-flex justify-content-center align-items-center align-items-md-start ">
-
-            <h4 class="text-center ">Send Us a Message</h4>
-            <p class="text-center text-muted">Fill out the form below and we'll get back to you as soon as possible.</p>
-          </div>
-        </div>
-        <div class="col-md-6 ">
-          <label for="inputName" class="form-label">Full Name</label>
-          <div class="position-relative">
-            <i class="fa-regular fa-user position-absolute icon text-primary start-0 ps-3 "></i>
-            <input type="text" class="form-control rounded-4 ps-5" id="inputName" placeholder="Full Name">
-            <div class="invalid-feedback">
-              Please enter your full name (at least 3 characters).
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 ">
-          <label for="inputEmail" class="form-label">Email Address</label>
-          <div class="position-relative">
-            <i class="fa-regular fa-envelope position-absolute start-0 ps-3  icon text-primary"></i>
-            <input type="text" class="form-control rounded-4 ps-5" id="inputEmail" placeholder="your email address">
-            <div class="invalid-feedback">
-              Please enter a valid email address.
-            </div>
-          </div>
-        </div>
-        <div class="col-12 position-relative">
-          <label for="inputSubject" class="form-label">Subject</label>
-          <div class="position-relative">
-            <i class="fa-solid fa-tag position-absolute start-0 ps-3  icon text-primary"></i>
-            <input type="text" class="form-control rounded-4 ps-5" id="inputSubject" placeholder="Select a subject">
-
-            <div class="invalid-feedback">
-              Subject must be at least 3 characters.
-            </div>
-          </div>
-        </div>
-        <div class="mb-3 position-relative">
-          <label for="inputMessage" class="form-label">Message</label>
-
-          <div class="position-relative">
-            <i class="fa-regular fa-message position-absolute start-0 ps-3  icon text-primary"></i>
-            <textarea class="form-control rounded-4 ps-5" id="inputMessage" rows="3"
-              placeholder="Write your message here ..."></textarea>
-            <div class="invalid-feedback">
-              Message must be at least 10 characters.
-            </div>
-          </div>
-        </div>
-        <div>
-          <button type="submit" class="btn btn-primary fw-bold fs-5 rounded-4 w-100">Send Message</button>
-        </div>
-        <div id="formAlert" class="alert d-none" role="alert">
-        </div>
-      </form>
-      <!-- form -->
-
-      <!-- data -->
-      <div class="row container col-lg-6 col-12 data m-auto">
-        <div class="d-flex g-3 container border rounded-4 p-3 bg-surface shadow m-0 col-12 data-hover">
-          <div class="d-flex justify-content-center align-items-center  ">
-
-            <div class="circle d-flex justify-content-center align-items-center rounded-circle">
-
-              <i class="fa-regular fa-envelope icon fs-1 text-light "></i>
-            </div>
-          </div>
-          <div class=" d-flex flex-column justify-content-center px-3 gap-0">
-
-            <h4 class="fs-5">Email Us</h4>
-            <p class="mb-1 text-muted">Have a question or suggestion?</p>
-            <p class="mb-1 text-muted">Send us a message and we'll reply soon.</p>
-          </div>
-        </div>
-        <div class="d-flex g-3 container border rounded-4 p-3 bg-surface shadow col-12 data-hover ">
-          <div class="d-flex justify-content-center align-items-center ">
-
-            <div class="circle d-flex justify-content-center align-items-center rounded-circle">
-              <i class="fa-solid fa-users icon fs-1 text-light"></i>
-            </div>
-          </div>
-          <div class=" d-flex flex-column justify-content-center px-3 gap-0">
-
-            <h4 class="fs-5">Follow Us</h4>
-            <p class="mb-1 text-muted">Stay connected for new recipes,</p>
-            <p class="mb-1 text-muted">food tips and travel inspiration.</p>
-            <div class="d-flex gap-4 fs-5">
-              <a href="#" class="text-primary text-primary-hover"><i class="fa-brands fa-square-facebook"></i></a>
-              <a href="#" class="text-primary text-primary-hover"><i class="fa-brands fa-instagram"></i></a>
-              <a href="#" class="text-primary text-primary-hover"><i class="fa-brands fa-youtube"></i></a>
-            </div>
-          </div>
-
-        </div>
-        <div class="d-flex g-3 container border rounded-4 p-3 bg-surface shadow col-12 data-hover">
-          <div class="d-flex justify-content-center align-items-center">
-
-            <div class="circle d-flex justify-content-center align-items-center rounded-circle">
-              <i class="fa-regular fa-clock icon text-light fs-1"></i>
-            </div>
-          </div>
-          <div class=" d-flex flex-column justify-content-center px-3 gap-0">
-
-            <h4 class="fs-5">We usually reply within 1-2 business days</h4>
-            <p class="mb-1 text-muted">We appreciate your patience</p>
-            <p class="mb-1 text-muted">and look forward to hearing from you.</p>
-
-          </div>
-
-        </div>
-
-        <div class="d-flex overflow-hidden container border rounded-4 bg-surface shadow p-0 mt-3 col-12">
-          <img src="images/contact/main-contact.png" class="col-12" alt="...">
+  <div class="signup">
+    <main class="main">
+      <div
+        class="bg-img d-flex  align-items-center px-md-5 text-main justify-content-lg-start justify-content-center  ">
+        <div class="col-12 col-md-4 mx-md-5">
+          <h2 class="h1 fw-bold text-lg-start text-center">Get in Touch</h2>
+          <p class="fs-5 text-lg-start text-center mx-5 mx-lg-0">Have a question, suggestion, or recipe to share?
+            We'd love to hear from you.</p>
         </div>
       </div>
+      <!-- contact -->
+      <section class="d-flex p-md-5 p-1 gap-5 flex-lg-row flex-column justify-content-center align-content-center">
+        <!-- form -->
+        <form id="contactForm"
+          class="row g-3 container col-lg-6 col-12 m-auto border rounded-4 p-3 bg-surface shadow my-0">
+          <div class="d-flex gap-4 align-items-center ">
+            <i class="fa-solid fa-paper-plane fs-1 text-primary"></i>
+            <div class="flex-column d-flex justify-content-center align-items-center align-items-md-start ">
 
-      <!-- data -->
-    </section>
-    <!-- contact -->
-  </main>
-  <!-- main -->
-</div>
+              <h4 class="text-center ">Send Us a Message</h4>
+              <p class="text-center text-muted">Fill out the form below and we'll get back to you as soon as possible.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 ">
+            <label for="inputName" class="form-label">Full Name</label>
+            <div class="position-relative">
+              <i class="fa-regular fa-user position-absolute icon text-primary start-0 ps-3 "></i>
+              <input type="text" class="form-control rounded-4 ps-5" id="inputName" placeholder="Full Name">
+              <div class="invalid-feedback">
+                Please enter your full name (at least 3 characters).
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 ">
+            <label for="inputEmail" class="form-label">Email Address</label>
+            <div class="position-relative">
+              <i class="fa-regular fa-envelope position-absolute start-0 ps-3  icon text-primary"></i>
+              <input type="text" class="form-control rounded-4 ps-5" id="inputEmail" placeholder="your email address">
+              <div class="invalid-feedback">
+                Please enter a valid email address.
+              </div>
+            </div>
+          </div>
+          <div class="col-12 position-relative">
+            <label for="inputSubject" class="form-label">Subject</label>
+            <div class="position-relative">
+              <i class="fa-solid fa-tag position-absolute start-0 ps-3  icon text-primary"></i>
+              <input type="text" class="form-control rounded-4 ps-5" id="inputSubject" placeholder="Select a subject">
+
+              <div class="invalid-feedback">
+                Subject must be at least 3 characters.
+              </div>
+            </div>
+          </div>
+          <div class="mb-3 position-relative">
+            <label for="inputMessage" class="form-label">Message</label>
+
+            <div class="position-relative">
+              <i class="fa-regular fa-message position-absolute start-0 ps-3  icon text-primary"></i>
+              <textarea class="form-control rounded-4 ps-5" id="inputMessage" rows="3"
+                placeholder="Write your message here ..."></textarea>
+              <div class="invalid-feedback">
+                Message must be at least 10 characters.
+              </div>
+            </div>
+          </div>
+          <div>
+            <button type="submit" class="btn btn-primary fw-bold fs-5 rounded-4 w-100">Send Message</button>
+          </div>
+          <div id="formAlert" class="alert d-none" role="alert">
+          </div>
+        </form>
+        <!-- form -->
+
+        <!-- data -->
+        <div class="row container col-lg-6 col-12 data m-auto">
+          <div
+            class="d-flex g-3 container border rounded-4 p-3 bg-surface shadow m-0 col-12 data-hover flex-column flex-md-row">
+            <div class="d-flex justify-content-center align-items-center  ">
+
+              <div class="circle d-flex justify-content-center align-items-center rounded-circle">
+
+                <i class="fa-regular fa-envelope icon fs-1 text-light "></i>
+              </div>
+            </div>
+            <div class=" d-flex flex-column justify-content-center px-3 gap-0">
+
+              <h4 class="fs-5 text-lg-start text-center">Email Us</h4>
+              <p class="mb-1 text-muted text-lg-start text-center">Have a question or suggestion?</p>
+              <p class="mb-1 text-muted text-lg-start text-center">Send us a message and we'll reply soon.</p>
+            </div>
+          </div>
+          <div
+            class="d-flex g-3 container border rounded-4 p-3 bg-surface shadow col-12 data-hover  flex-column flex-md-row">
+            <div class="d-flex justify-content-center align-items-center ">
+
+              <div class="circle d-flex justify-content-center align-items-center rounded-circle">
+                <i class="fa-solid fa-users icon fs-1 text-light"></i>
+              </div>
+            </div>
+            <div class=" d-flex flex-column justify-content-center px-3 gap-0">
+
+              <h4 class="fs-5 text-lg-start text-center">Follow Us</h4>
+              <p class="mb-1 text-muted text-lg-start text-center">Stay connected for new recipes,</p>
+              <p class="mb-1 text-muted text-lg-start text-center">food tips and travel inspiration.</p>
+              <div class="d-flex gap-4 fs-5  justify-content-center justify-content-lg-start">
+                <a href="#" class="text-primary text-primary-hover"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="#" class="text-primary text-primary-hover"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="text-primary text-primary-hover"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+            </div>
+
+          </div>
+          <div
+            class="d-flex g-3 container border rounded-4 p-3 bg-surface shadow col-12 data-hover  flex-column flex-md-row">
+            <div class="d-flex justify-content-center align-items-center">
+
+              <div class="circle d-flex justify-content-center align-items-center rounded-circle">
+                <i class="fa-regular fa-clock icon text-light fs-1"></i>
+              </div>
+            </div>
+            <div class=" d-flex flex-column justify-content-center px-3 gap-0">
+
+              <h4 class="fs-5 text-lg-start text-center">We usually reply within 1-2 business days</h4>
+              <p class="mb-1 text-muted text-lg-start text-center">We appreciate your patience</p>
+              <p class="mb-1 text-muted text-lg-start text-center">and look forward to hearing from you.</p>
+
+            </div>
+
+          </div>
+
+          <div class="d-flex overflow-hidden container border rounded-4 bg-surface shadow p-0 mt-3 col-12">
+            <img src="images/contact/main-contact.png" class="col-12" alt="...">
+          </div>
+        </div>
+
+        <!-- data -->
+      </section>
+      <!-- contact -->
+    </main>
+    <!-- main -->
+  </div>
 
   <!-- footer -->
   <footer class="bg-surface border border-start-0 border-end-0 border-bottom-0 py-4">
