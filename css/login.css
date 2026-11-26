@@ -19,13 +19,13 @@
     color: var(--text-muted);
 }
 
-/* .email i {
+.email i {
     color: var(--primary) !important;
-} */
+} 
 
-/* .password i {
+.password i {
     color: var(--primary) !important;
-} */
+} 
 
 .email label {
     color: var(--text-muted) !important;

@@ -32,7 +32,8 @@ function validate_full_name() {
 
 function validate_email() {
   let email = document.getElementById("email");
-  let email_rgx = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  let email_rgx =
+    /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*\.[a-zA-Z]{2,}$/;
   let valid_email = false;
 
   if (email_rgx.test(email.value)) {

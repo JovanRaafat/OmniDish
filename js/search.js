@@ -1,4 +1,4 @@
-import getCode from './codeCounty/codeCounty.js';
+import getCode from "./codeCounty/codeCounty.js";
 const BASE = "https://www.themealdb.com/api/json/v1/1";
 let allMeals = [];
 const searchInput = document.getElementById("searchInput");
@@ -7,44 +7,45 @@ function getResults(categories) {
   return Promise.all(
     categories.map(async ({ strCategory }) => {
       try {
-
-        const res = await fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${encodeURIComponent(strCategory)}`);
+        const res = await fetch(
+          `https://www.themealdb.com/api/json/v1/1/filter.php?c=${encodeURIComponent(strCategory)}`,
+        );
 
         const data = await res.json();
-        return await (data.meals || []).map((meal) => ({ ...meal, strCategory, code: getCode(meal.strCountry) }));
-      }
-      catch (e) {
+        return await (data.meals || []).map((meal) => ({
+          ...meal,
+          strCategory,
+          code: getCode(meal.strCountry),
+        }));
+      } catch (e) {
         console.log(e);
       }
-    })
+    }),
   );
 }
 
 async function getAllMeals() {
   try {
-    const res = await fetch(`https://www.themealdb.com/api/json/v1/1/categories.php`);
+    const res = await fetch(
+      `https://www.themealdb.com/api/json/v1/1/categories.php`,
+    );
 
     const { categories } = await res.json();
 
     const results = await getResults(categories);
 
     return results.flat();
-
-  }
-  catch (e) {
+  } catch (e) {
     console.log(e);
   }
 }
 
-
 function displayallMeals(meals) {
-  recipes.innerHTML = '';
-  recipes.innerHTML = meals
-    .map(createRecipeCard)
-    .join("");
+  recipes.innerHTML = "";
+  recipes.innerHTML = meals.map(createRecipeCard).join("");
   function createRecipeCard(meal, index) {
     if (index > 11) {
-      return
+      return;
     }
     return `
 
@@ -91,15 +92,12 @@ function displayallMeals(meals) {
   }
 }
 
-
-
-
 async function main() {
   allMeals = await getAllMeals();
   searchInput.addEventListener("input", function (e) {
     const value = e.target.value.trim().toLowerCase();
     if (!value) {
-      recipes.innerHTML = '';
+      recipes.innerHTML = "";
       return;
     }
     search_items(value);
@@ -108,14 +106,16 @@ async function main() {
   function search_items(searchValue) {
     let filtered = [];
 
-    filtered = allMeals.filter((meal) => meal.strMeal.toLowerCase().includes(searchValue))
+    filtered = allMeals.filter((meal) =>
+      meal.strMeal.toLowerCase().includes(searchValue),
+    );
     if (filtered.length === 0) {
       recipes.innerHTML = `
       <div>
-      <div class="alert alert-danger mx-auto" style="max-width: 600px;">
+      <div class="alert alert-warning mx-auto" style="max-width: 600px;">
         <i class="fa-solid fa-circle-exclamation me-2"></i>
-        No countries found or No recipes for this country
-      </div>
+        No recipes found
+        </div>
       </div>
     `;
       return;
@@ -123,4 +123,4 @@ async function main() {
     displayallMeals(filtered);
   }
 }
-main()
+main();

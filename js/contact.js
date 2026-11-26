@@ -1,4 +1,3 @@
-
 const contactForm = document.getElementById("contactForm");
 const formAlert = document.getElementById("formAlert");
 
@@ -15,7 +14,8 @@ function validateName(name) {
 }
 
 function validateEmail(email) {
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const emailRegex =
+    /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*\.[a-zA-Z]{2,}$/;
   return emailRegex.test(email.trim());
 }
 
@@ -59,8 +59,10 @@ function validateInput(input) {
 // Validate While Typing
 inputs.forEach((input) => {
   input.addEventListener("input", () => {
-    if (input.classList.contains("is-invalid") ||
-      input.classList.contains("is-valid")) {
+    if (
+      input.classList.contains("is-invalid") ||
+      input.classList.contains("is-valid")
+    ) {
       validateInput(input);
     }
   });
@@ -80,12 +82,8 @@ function showAlert(message, type) {
 contactForm.addEventListener("submit", (e) => {
   e.preventDefault();
 
-  inputs.forEach((input) =>
-    validateInput(input)
-  );
-  const isFormValid = inputs.every((input) =>
-    validateInput(input)
-  );
+  inputs.forEach((input) => validateInput(input));
+  const isFormValid = inputs.every((input) => validateInput(input));
 
   if (!isFormValid) {
     showAlert("Please check your inputs and try again.", "danger");

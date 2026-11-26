@@ -211,12 +211,25 @@
 .input-box:has(input.valid_input) > i:first-child,
 .input-box:has(input.valid_input) button,
 .input-box:has(input.valid_input) .eye-icon {
-  color: #198754;
+  color: #198754 !important;
 }
 
 /* Invalid state */
 .input-box:has(input.invalid_input) > i:first-child,
 .input-box:has(input.invalid_input) button,
 .input-box:has(input.invalid_input) .eye-icon {
-  color: #dc3545;
+  color: #dc3545 !important;
+}
+.fullname i {
+  color: var(--primary) !important;
+}
+.email i {
+  color: var(--primary) !important;
+}
+
+.password i {
+  color: var(--primary) !important;
+}
+.passwordcon i {
+  color: var(--primary) !important;
 }

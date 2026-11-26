@@ -4,7 +4,7 @@
 }
 
 .email i {
-  color: white !important;
+  color: var(--primary) !important;
 }
 
 .email label {
